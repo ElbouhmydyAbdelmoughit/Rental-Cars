@@ -1,0 +1,143 @@
+$color-primary:red;
+$color-black:black;
+$color-white:rgb(255, 255, 255);
+$color-login:#F3F2EF;
+$color-shadow:#c4c4c4;
+$color-icons: #34B3F1;
+
+/*mixin for center element*/
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+/*mixin box shadow for button */
+@mixin shadow {
+  box-shadow: inset 3px 3px 20px $color-primary,3px 3px 20px $color-primary;
+}
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Arial Rounded MT Bold', Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+#icons_menu{
+  background-color: $color-primary !important;
+}
+#NAVBAR{
+  background-color: $color-white;
+  .container a span{
+    color: $color-black;
+    & #text_logo{
+      color: $color-primary;
+    }
+  }
+  #navbar_menu ul li a{
+    color: $color-black;
+    &:hover{
+      color: $color-primary;
+    }
+  }
+  #btn_sigin{
+    margin-right: 10px;
+  }
+  #btn_login{
+    margin-top: 2px;
+    padding: 5px 20px;
+    background-color: $color-primary;
+    color: $color-white !important;
+    border-radius: 5px;
+    &:hover{
+      padding: 3px 18px;
+      border: 2px solid $color-primary !important;
+      background-color: $color-white !important;
+      color: $color-primary !important;
+    }
+  } 
+}
+#section1_landing{
+  background-color: $color-primary !important;
+  color: $color-white !important;
+  .contact_section1{
+    height: 100%;
+    margin-left: 80px;
+    padding-bottom: 110px;
+    #text_primary_landing{
+      font-weight: bold;
+      padding-top:  180px;
+    }
+    #btn_section1{
+      color: $color-white !important;
+      border-radius: 5px;
+      border: 2px solid $color-white;
+      margin-top: 50px;
+      padding: 5px 25px;
+      &:hover{
+        background-color: $color-white;
+        color: $color-primary !important;
+      }
+    }
+  }
+}
+#container_fluid{
+  @include center();
+  background-color: $color-login !important;
+  padding: 20px;
+  #contant{
+    padding-bottom: 0 !important;
+    max-width: 120vh;
+    height: 80vh;
+    box-shadow: 5px 5px 20px $color-shadow;
+    border-radius: 10px;
+    background-color: $color-white !important;
+    #text_login{
+      padding-left: 10px;
+      margin-bottom: 50px !important;
+      border-left: 3px solid $color-primary !important;
+    }
+    #login{
+      background-color: $color-black;
+      color: $color-white;
+      &:hover{
+        border: 2px solid $color-primary;
+        color: $color-primary;
+        background-color: $color-white;
+      }
+    }
+    #img_login{
+      border-radius: 0px 10px 10px 0px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+#navbar{
+  background-color: $color-primary;
+  color: $color-white;
+  h1{
+    color: $color-black;
+  }
+  #icons li{
+    margin-right: 20px !important;
+    &:first-child{
+      margin-left: -30px !important;
+    }
+    &:hover{
+      color: $color-icons;
+    }
+  }
+  ul li{
+    list-style: none;
+    &:nth-child(1){
+      font-weight: bold;
+      margin-bottom: 15px !important;
+    }
+  }
+  #paragraph{
+    font-size: small;
+  }
+}
