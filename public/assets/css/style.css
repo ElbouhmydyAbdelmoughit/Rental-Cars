@@ -108,6 +108,7 @@ html {
 }
 
 #navbar {
+  position: relative;
   background-color: red;
   color: white;
 }
@@ -132,6 +133,8 @@ html {
 }
 #navbar #paragraph {
   font-size: small;
+  position: absolute;
+  top: 185px;
 }
 
 /*# sourceMappingURL=style.css.map */

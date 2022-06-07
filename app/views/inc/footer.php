@@ -28,8 +28,8 @@
       <li>Tanger</li>
     </ul>
   </footer>
-  <div class="container d-flex align-items-lg-start justify-content-lg-start align-items-end justify-content-end">
-    <p class="mb-5" id="paragraph">&copy; 2022 Copyright All Rights
+  <div class="container">
+    <p id="paragraph">&copy; 2022 Copyright All Rights
       Reserved
     </p>
   </div>
