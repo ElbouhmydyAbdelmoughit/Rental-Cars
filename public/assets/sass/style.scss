@@ -116,6 +116,7 @@ html{
   }
 }
 #navbar{
+  position: relative;
   background-color: $color-primary;
   color: $color-white;
   h1{
@@ -139,5 +140,7 @@ html{
   }
   #paragraph{
     font-size: small;
+    position: absolute;
+    top: 185px;
   }
 }
