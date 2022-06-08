@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="<?= URLROOT ?>/assets/css/style.css">
   <link rel="stylesheet" href="<?= URLROOT ?>/assets/css/aos.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2">
-  <!-- <link rel="stylesheet" href="assets/css/animate.min.css"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   <title><?= SITENAME ?></title>
 </head>
 

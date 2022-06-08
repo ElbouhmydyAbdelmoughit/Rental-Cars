@@ -5,9 +5,9 @@
     <ul id="ul_icons">
       <h1 class="fw-bold">YOU<span class="text-white fw-bold">CAR</span></h1>
       <ul class="d-flex" id="icons">
-        <li><i class="bi bi-facebook"></i></li>
+        <li><i class="fa-brands fa-facebook-f"></i></li>
         <li><i class="bi bi-tiktok"></i></li>
-        <li><i class="bi bi-linkedin"></i></li>
+        <li><i class="fa-brands fa-linkedin-in"></i></li>
         <li><i class="bi bi-instagram"></i></li>
         <li><i class="bi bi-twitter"></i></li>
       </ul>
