@@ -15,9 +15,9 @@
     <ul>
       <li>Page</li>
       <li>Home</li>
-      <li>About US</li>
+      <li><a href="#about">About US</a></li>
       <li>Cars</li>
-      <li>Team</li>
+      <li><a href="#team">Team</a></li>
       <li>Contact Us</li>
     </ul>
     <ul>
@@ -34,10 +34,13 @@
     </p>
   </div>
 </div>
+<script src="<?= URLROOT ?>/assets/js/aos.min.js"></script>
+<script>
+AOS.init();
+</script>
 <script src="<?= URLROOT ?>/assets/js/script.js"></script>
 <script src="<?= URLROOT ?>/assets/js/sweetalert2.js"></script>
 <script src="<?= URLROOT ?>/assets/js/bootstrap.bundle.min.js"></script>
-<script src="<?= URLROOT ?>/assets/js/aos.min.js"></script>
 </body>
 
 </html>

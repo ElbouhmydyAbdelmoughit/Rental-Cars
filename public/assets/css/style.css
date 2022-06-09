@@ -58,7 +58,7 @@ html {
 }
 #section1_landing .contact_section1 #text_primary_landing {
   font-weight: bold;
-  padding-top: 180px;
+  padding-top: 170px;
 }
 #section1_landing .contact_section1 #btn_section1 {
   color: white !important;
@@ -70,6 +70,15 @@ html {
 #section1_landing .contact_section1 #btn_section1:hover {
   background-color: white;
   color: red !important;
+}
+
+#section2_landing {
+  position: relative;
+  padding-right: 200px !important;
+}
+#section2_landing #img_body_landing_page {
+  position: absolute !important;
+  right: 90px !important;
 }
 
 #container_fluid {
@@ -131,10 +140,50 @@ html {
   font-weight: bold;
   margin-bottom: 15px !important;
 }
+#navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
 #navbar #paragraph {
   font-size: small;
   position: absolute;
   top: 185px;
+}
+
+#about {
+  margin-top: 70px !important;
+  margin-bottom: 70px !important;
+}
+#about #image_about #img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #c4c4c4;
+}
+#about span:nth-child(1) {
+  color: black;
+  opacity: 0.5;
+}
+#about h3 span {
+  color: red !important;
+  opacity: 1 !important;
+}
+
+#team {
+  margin-top: 70px !important;
+  margin-bottom: 70px !important;
+}
+#team .title span {
+  color: black;
+  opacity: 0.5;
+}
+#team .title h3 span {
+  color: red !important;
+  opacity: 1;
+}
+#team #cards .card #team1 {
+  width: 18rem !important;
+  height: 10rem !important;
 }
 
 /*# sourceMappingURL=style.css.map */

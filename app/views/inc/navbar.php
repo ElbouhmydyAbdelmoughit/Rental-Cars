@@ -16,6 +16,9 @@
           <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#team">Team</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#cars">All Cars</a>
         </li>
         <li class="nav-item">

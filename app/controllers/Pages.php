@@ -8,7 +8,7 @@ class Pages extends Controller
   public function index()
   {
     $data = [
-      'title' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+      'title' => 'Welcome To YOUCAR Website, Rent Your Best Car.',
     ];
 
     $this->view('pages/index', $data);
