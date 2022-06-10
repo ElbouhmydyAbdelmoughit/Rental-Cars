@@ -16,7 +16,7 @@
     </div>
   </div>
 </div>
-<div class="container" id="about" data-aos="fade-up" data-aos-duration="800">
+<div class="container" id="about" data-aos="fade-up" data-aos-duration="1000">
   <div class="row col-12 text-wrap d-md-flex d-block">
     <div class="col-6" id="image_about">
       <img class="img-fluid w-100 img-responcive d-none d-md-block" src="assets/img/img_about.jpg" alt="image about"
@@ -33,19 +33,57 @@
     </div>
   </div>
 </div>
-<div class="team " id="team">
-  <div class="container">
-    <div class="title text-center">
+<div class="team text-center" id="team" data-aos="fade-up" data-aos-duration="1000">
+  <div class="container text-center">
+    <div class="row title">
       <span>OUR TEAM</span>
       <h3 class="fw-bold my-5">This is Team Company YOU<span>CAR</span></h3>
     </div>
-    <div class="cards">
-      <div class="row text-center">
-        <div class="col-sm-4 col-12">xxxx</div>
-        <div class="col-sm-4 col-12">xxxx</div>
-        <div class="col-sm-4 col-12">xxxx</div>
+    <div class="row text-center">
+      <div class="col-lg-3 col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <img src="assets\img\team1.jpg" alt="image team" class="img-fluid  w-50">
+            <h3 class="">John Smith</h3>
+            <h5 class="">UI/UX Designer</h5>
+            <div class="icons d-flex align-contant-center justify-content-center">
+              <li><i class="fa-brands fa-facebook-f"></i></li>
+              <li><i class="bi bi-instagram"></i></li>
+              <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <img src="assets\img\team1.jpg" alt="image team" class="img-fluid  w-50">
+            <h3 class="">John Smith</h3>
+            <h5 class="">UI/UX Designer</h5>
+            <div class="icons d-flex align-contant-center justify-content-center">
+              <li><i class="fa-brands fa-facebook-f"></i></li>
+              <li><i class="bi bi-instagram"></i></li>
+              <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <img src="assets\img\team1.jpg" alt="image team" class="img-fluid  w-50">
+            <h3 class="">John Smith</h3>
+            <h5 class="">UI/UX Designer</h5>
+            <div class="icons d-flex align-contant-center justify-content-center">
+              <li><i class="fa-brands fa-facebook-f"></i></li>
+              <li><i class="bi bi-instagram"></i></li>
+              <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+</div>
 </div>
 <?php require APPROOT . '/views/inc/footer.php'; ?>
