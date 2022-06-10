@@ -1,6 +1,6 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
 <!-----------section landing page----------------->
-<div class="container-fliud bg-white my-4" id="landingPage">
+<div class="home container-fliud bg-white my-4" id="landingPage">
   <div class="d-flex col-12 text-md-wrap ">
     <!-----------section1 landing page text and button----------------->
     <div class="col-12 col-lg-6 text-start" id="section1_landing">
@@ -33,14 +33,14 @@
     </div>
   </div>
 </div>
-<div class="team text-center" id="team" data-aos="fade-up" data-aos-duration="1000">
+<div class="team text-center py-5" id="team" data-aos="fade-up" data-aos-duration="1000">
   <div class="container text-center">
     <div class="row title">
       <span>OUR TEAM</span>
       <h3 class="fw-bold my-5">This is Team Company YOU<span>CAR</span></h3>
     </div>
     <div class="row text-center">
-      <div class="col-lg-3 col-md-6">
+      <div class="contant_card col-12 col-lg-3 col-md-6">
         <div class="card">
           <div class="card-body">
             <img src="assets\img\team1.jpg" alt="image team" class="img-fluid  w-50">
@@ -54,7 +54,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6">
+      <div class="contant_card col-12 col-lg-3 col-md-6">
         <div class="card">
           <div class="card-body">
             <img src="assets\img\team1.jpg" alt="image team" class="img-fluid  w-50">
@@ -68,7 +68,21 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6">
+      <div class="contant_card col-12 col-lg-3 col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <img src="assets\img\team1.jpg" alt="image team" class="img-fluid  w-50">
+            <h3 class="">John Smith</h3>
+            <h5 class="">UI/UX Designer</h5>
+            <div class="icons d-flex align-contant-center justify-content-center">
+              <li><i class="fa-brands fa-facebook-f"></i></li>
+              <li><i class="bi bi-instagram"></i></li>
+              <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contant_card col-12 col-lg-3 col-md-6">
         <div class="card">
           <div class="card-body">
             <img src="assets\img\team1.jpg" alt="image team" class="img-fluid  w-50">

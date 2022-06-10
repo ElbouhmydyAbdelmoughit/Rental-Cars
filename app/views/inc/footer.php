@@ -14,7 +14,7 @@
     </ul>
     <ul>
       <li>Page</li>
-      <li>Home</li>
+      <li><a href="#home">Home</a></li>
       <li><a href="#about">About US</a></li>
       <li>Cars</li>
       <li><a href="#team">Team</a></li>
@@ -36,7 +36,7 @@
 </div>
 <script src="<?= URLROOT ?>/assets/js/aos.min.js"></script>
 <script>
-  AOS.init();
+AOS.init();
 </script>
 <script src="<?= URLROOT ?>/assets/js/script.js"></script>
 <script src="<?= URLROOT ?>/assets/js/sweetalert2.js"></script>

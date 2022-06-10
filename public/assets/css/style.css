@@ -181,35 +181,50 @@ html {
   color: red !important;
   opacity: 1;
 }
-#team .card {
+#team .contant_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px !important;
+}
+#team .contant_card .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   box-shadow: 5px 5px 10px #c4c4c4;
   border: none;
   max-width: 200px !important;
   height: 250px !important;
-  padding-top: 0;
-  margin-top: 0;
 }
-#team .card:hover {
+#team .contant_card .card:hover {
   box-shadow: 2px 2px 5px #c4c4c4;
 }
-#team .card li {
+#team .contant_card .card li {
   list-style: none;
   margin-right: 30px !important;
 }
-#team .card li i {
+#team .contant_card .card li i {
   color: black;
   opacity: 0.7;
 }
-#team .card li i:hover {
+#team .contant_card .card li i:hover {
   color: red;
   opacity: 1;
 }
-#team .card h5 {
+#team .contant_card .card h3:hover {
+  color: red;
+}
+#team .contant_card .card h5 {
   color: black;
   opacity: 0.5;
 }
-#team .card img {
+#team .contant_card .card h5:hover {
+  color: red;
+  opacity: 1;
+}
+#team .contant_card .card img {
+  box-shadow: 2px 2px 5px #c4c4c4;
   position: relative;
   top: -60px !important;
   border-radius: 100%;
