@@ -14,7 +14,7 @@
     </ul>
     <ul>
       <li>Page</li>
-      <li><a href="#home">Home</a></li>
+      <li><a href="#landingPage">Home</a></li>
       <li><a href="#about">About US</a></li>
       <li>Cars</li>
       <li><a href="#team">Team</a></li>

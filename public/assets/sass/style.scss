@@ -51,7 +51,9 @@ html{
     background-color: $color-primary;
     color: $color-white !important;
     border-radius: 5px;
+    @include shadow();
     &:hover{
+      box-shadow: none;
       padding: 3px 18px;
       border: 2px solid $color-primary !important;
       background-color: $color-white !important;
@@ -233,6 +235,19 @@ html{
         height: 110px;
         width: 110px !important;
       }
+    }
+  }
+}
+#cars{
+  @include center();
+  .container{
+    .row{
+      align-items: center !important;
+      justify-content: center !important;
+      .contant_cars{
+        width: 17rem;
+        margin-bottom: 25px !important;
+       }
     }
   }
 }
