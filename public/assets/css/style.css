@@ -39,7 +39,6 @@ html {
   background-color: red;
   color: white !important;
   border-radius: 5px;
-  box-shadow: inset 3px 3px 20px red, 3px 3px 20px red;
 }
 #NAVBAR #btn_login:hover {
   box-shadow: none;
@@ -245,7 +244,70 @@ html {
 }
 #cars .container .row .contant_cars {
   width: 17rem;
+  min-height: 20rem !important;
   margin-bottom: 25px !important;
+}
+#cars .container .row .contant_cars .cars img {
+  max-height: 10rem !important;
+  min-height: 10rem !important;
+}
+#cars .container .row .contant_cars .cars .card-body {
+  padding-top: 20px !important;
+}
+#cars .container .row .contant_cars .cars .card-body span {
+  color: black;
+  opacity: 0.7;
+}
+#cars .container .row .contant_cars .cars .card-body span:hover {
+  opacity: 1 !important;
+}
+#cars .container .row .contant_cars .cars .card-body h5 {
+  font-weight: bold;
+}
+#cars .container .row .contant_cars .cars .card-body p {
+  color: red;
+  font-weight: bold;
+}
+#cars .container .row .contant_cars .cars .card-body a {
+  border-radius: 3px !important;
+  padding: 4px 49px !important;
+  background-color: white;
+  color: red;
+  border: 2px solid red !important;
+}
+#cars .container .row .contant_cars .cars .card-body a:hover {
+  box-shadow: inset 3px 3px 20px red, 3px 3px 20px red;
+  padding: 5px 50px;
+  color: white !important;
+  background-color: red !important;
+}
+
+#contact {
+  margin-bottom: 70px !important;
+}
+#contact .container .row form input {
+  border-color: red !important;
+  border-radius: 5px !important;
+}
+#contact .container .row form textarea {
+  border-color: red !important;
+  min-height: 10rem;
+}
+#contact .container .row .button a {
+  border-radius: 5px !important;
+  color: white !important;
+  background-color: red !important;
+}
+#contact .container .row .button a:hover {
+  color: black !important;
+  background-color: white !important;
+  border: 2px solid black;
+}
+#contact .container .row .info ul li i {
+  color: red;
+}
+#contact .container .row .info ul li i:hover {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
