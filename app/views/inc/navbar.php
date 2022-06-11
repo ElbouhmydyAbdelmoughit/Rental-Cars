@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg bg-white shadow" id="NAVBAR">
+<nav class="navbar navbar-expand-lg bg-white shadow" id="NAVBAR" data-aos="fade-down" data-aos-easing="linear"
+  data-aos-duration="800">
   <div class="container">
     <a class="navbar-brand" href="<?= URLROOT ?>">
       <span class="fw-bold fs-2 d-flex">YOU <span id="text_logo">CAR</span></span>
@@ -10,7 +11,7 @@
     <div class="collapse navbar-collapse" id="navbar_menu">
       <ul class="navbar-nav mx-auto me-0 mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#landingPage">Home</a>
+          <a class="nav-link active" aria-current="page" href="#landing_page">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>

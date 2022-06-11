@@ -51,7 +51,6 @@ html{
     background-color: $color-primary;
     color: $color-white !important;
     border-radius: 5px;
-    @include shadow();
     &:hover{
       box-shadow: none;
       padding: 3px 18px;
@@ -246,8 +245,86 @@ html{
       justify-content: center !important;
       .contant_cars{
         width: 17rem;
+        min-height: 20rem !important;
         margin-bottom: 25px !important;
+        .cars{
+          img{
+            max-height: 10rem !important;
+            min-height: 10rem !important;
+          }
+          .card-body{
+            padding-top: 20px !important;
+            span{
+              color: $color-black;
+              opacity: 0.7;
+              &:hover{
+                opacity: 1 !important;
+              }
+            }
+            h5{
+              font-weight: bold;
+            }
+            p{
+              color: $color-primary;
+              font-weight: bold;
+            }
+            a{
+              border-radius: 3px !important;
+              padding: 4px 49px !important;
+              background-color: $color-white;
+              color: $color-primary;
+              border: 2px solid $color-primary !important;
+              &:hover{
+                @include shadow();
+                padding: 5px 50px;
+                color: $color-white !important;
+                background-color: $color-primary !important;
+              }
+            }
+          }
+        }
        }
+    }
+  }
+}
+#contact{
+  margin-bottom: 70px !important;
+  .container{
+    .row{
+      form{
+        input{
+          border-color: $color-primary !important;
+          border-radius: 5px !important;
+        }
+        textarea{
+          border-color: $color-primary !important;
+          min-height: 10rem;
+        }
+      }
+      .button{
+        a{
+          border-radius: 5px !important;
+          color: $color-white !important;
+          background-color: $color-primary !important;
+          &:hover{
+            color: $color-black !important;
+            background-color: $color-white !important;
+            border: 2px solid $color-black;
+          }
+        }
+      }
+      .info{
+        ul{
+          li{
+            i{
+              color: $color-primary;
+              &:hover{
+                color: $color-black;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

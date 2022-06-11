@@ -1,5 +1,6 @@
 <!-------Creation of a Footer------>
 <div id="navbar">
+  <!--== this id for scrolling page ==-->
   <footer class="d-flex justify-content-between px-5 pt-5" id="footer">
 
     <ul id="ul_icons">
@@ -14,11 +15,11 @@
     </ul>
     <ul>
       <li>Page</li>
-      <li><a href="#landingPage">Home</a></li>
+      <li><a href="#landing_page">Home</a></li>
       <li><a href="#about">About US</a></li>
-      <li>Cars</li>
       <li><a href="#team">Team</a></li>
-      <li>Contact Us</li>
+      <li><a href="#cars">Cars</a></li>
+      <li><a href="#contact">Contact Us</a></li>
     </ul>
     <ul>
       <li>Contact</li>
