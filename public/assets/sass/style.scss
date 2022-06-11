@@ -149,6 +149,9 @@ html{
     a{
       text-decoration: none;
       color: $color-white;
+      &:hover{
+        color: $color-black;
+      }
     }
   }
   #paragraph{

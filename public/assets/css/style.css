@@ -145,6 +145,9 @@ html {
   text-decoration: none;
   color: white;
 }
+#navbar ul li a:hover {
+  color: black;
+}
 #navbar #paragraph {
   font-size: small;
   position: absolute;
