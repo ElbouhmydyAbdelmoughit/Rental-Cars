@@ -51,7 +51,9 @@ html{
     background-color: $color-primary;
     color: $color-white !important;
     border-radius: 5px;
+    @include shadow();
     &:hover{
+      box-shadow: none;
       padding: 3px 18px;
       border: 2px solid $color-primary !important;
       background-color: $color-white !important;
@@ -68,7 +70,7 @@ html{
     padding-bottom: 110px;
     #text_primary_landing{
       font-weight: bold;
-      padding-top:  180px;
+      padding-top:  170px;
     }
     #btn_section1{
       color: $color-white !important;
@@ -81,6 +83,14 @@ html{
         color: $color-primary !important;
       }
     }
+  }
+}
+#section2_landing{
+  position: relative;
+  padding-right: 200px !important;
+  #img_body_landing_page{
+    position: absolute !important;
+    right: 90px !important;
   }
 }
 #container_fluid{
@@ -137,10 +147,107 @@ html{
       font-weight: bold;
       margin-bottom: 15px !important;
     }
+    a{
+      text-decoration: none;
+      color: $color-white;
+    }
   }
   #paragraph{
     font-size: small;
     position: absolute;
     top: 185px;
+  }
+}
+#about{
+  margin-top: 70px !important;
+  margin-bottom: 70px !important;
+  #image_about{
+    #img{
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px $color-shadow;
+    }
+  }
+  span:nth-child(1){
+    color: $color-black;
+    opacity: 0.5;
+  }
+  h3 span{
+    color: $color-primary !important;
+    opacity: 1 !important;
+  }
+}
+#team{
+  margin-top: 70px !important;
+  margin-bottom: 70px !important;
+  .title{
+    span{
+      color: $color-black;
+      opacity: 0.5;
+    }
+    h3 span{
+      color: $color-primary !important;
+      opacity: 1;
+    }
+  }
+  .contant_card{
+    @include center();
+    margin-top: 100px !important;
+    .card{
+      @include center();
+      position: relative;
+      box-shadow: 5px 5px 10px $color-shadow;
+      border: none;
+      max-width: 200px !important;
+      height: 250px !important;
+      &:hover{
+        box-shadow: 2px 2px 5px $color-shadow;
+      }
+      li{
+        list-style: none;
+        margin-right: 30px !important;
+        i{
+          color: $color-black;
+          opacity: 0.7;
+          &:hover{
+            color: $color-primary;
+            opacity: 1;
+          }
+        }
+      }
+      h3:hover{
+        color: $color-primary;
+      }
+      h5{
+        color: $color-black;
+        opacity: 0.5;
+        &:hover{
+          color: $color-primary;
+          opacity: 1;
+        }
+      }
+      img{
+        box-shadow:  2px 2px 5px $color-shadow;
+        position: relative;
+        top: -60px !important;
+        border-radius: 100%;
+        height: 110px;
+        width: 110px !important;
+      }
+    }
+  }
+}
+#cars{
+  @include center();
+  .container{
+    .row{
+      align-items: center !important;
+      justify-content: center !important;
+      .contant_cars{
+        width: 17rem;
+        margin-bottom: 25px !important;
+       }
+    }
   }
 }
