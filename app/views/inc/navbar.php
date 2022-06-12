@@ -26,7 +26,7 @@
           <a class="nav-link" href="#contact">Contact Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= URLROOT ?>/users/signin" id="btn_sigin">Sigin</a>
+          <a class="nav-link" href="<?= URLROOT ?>/users/register" id="btn_sigin">Register</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?= URLROOT ?>/users/login" id="btn_login">Login</a>

@@ -14,12 +14,12 @@ class Pages extends Controller
     $this->view('pages/index', $data);
   }
 
-  public function about()
+  public function payment()
   {
-    // $data = [
-    //   'title' => 'About Us'
-    // ];
+    $data = [
+      'title' => 'Payment'
+    ];
 
-    $this->view('pages/about');
+    $this->view('payment', $data);
   }
 }
