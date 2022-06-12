@@ -41,7 +41,6 @@ html {
   border-radius: 5px;
 }
 #NAVBAR #btn_login:hover {
-  box-shadow: none;
   padding: 3px 18px;
   border: 2px solid red !important;
   background-color: white !important;
@@ -86,7 +85,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F3F2EF !important;
+  background-color: white !important;
   padding: 20px;
 }
 #container_fluid #contant {
@@ -105,11 +104,14 @@ html {
 #container_fluid #contant #login {
   background-color: black;
   color: white;
+  border-radius: 5px;
+  padding: 6px 100px !important;
 }
 #container_fluid #contant #login:hover {
-  border: 2px solid red;
-  color: red;
+  border: 2px solid black;
+  color: black;
   background-color: white;
+  padding: 5px 98px !important;
 }
 #container_fluid #contant #img_login {
   border-radius: 0px 10px 10px 0px;
@@ -158,11 +160,11 @@ html {
   margin-top: 70px !important;
   margin-bottom: 70px !important;
 }
+#about .contant_about {
+  margin-top: 150px !important;
+}
 #about #image_about #img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px #c4c4c4;
+  margin-top: 0px !important;
 }
 #about span:nth-child(1) {
   color: black;
@@ -196,13 +198,12 @@ html {
   align-items: center;
   justify-content: center;
   position: relative;
-  box-shadow: 5px 5px 10px #c4c4c4;
+  border: 1px solid black !important;
   border: none;
-  max-width: 200px !important;
-  height: 250px !important;
 }
 #team .contant_card .card:hover {
-  box-shadow: 2px 2px 5px #c4c4c4;
+  box-shadow: 5px 5px 10px #c4c4c4;
+  border: none !important;
 }
 #team .contant_card .card li {
   list-style: none;
@@ -210,30 +211,22 @@ html {
 }
 #team .contant_card .card li i {
   color: black;
-  opacity: 0.7;
 }
 #team .contant_card .card li i:hover {
-  color: red;
-  opacity: 1;
-}
-#team .contant_card .card h3:hover {
   color: red;
 }
 #team .contant_card .card h5 {
   color: black;
   opacity: 0.5;
 }
-#team .contant_card .card h5:hover {
-  color: red;
-  opacity: 1;
-}
 #team .contant_card .card img {
-  box-shadow: 2px 2px 5px #c4c4c4;
+  border: none !important;
+  box-shadow: 0px 3px 6px #c4c4c4;
   position: relative;
-  top: -60px !important;
-  border-radius: 100%;
-  height: 110px;
-  width: 110px !important;
+  top: -20px !important;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
 #cars {
@@ -242,12 +235,13 @@ html {
   justify-content: center;
 }
 #cars .container .row {
-  align-items: center !important;
-  justify-content: center !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #cars .container .row .contant_cars {
-  width: 17rem;
-  min-height: 20rem !important;
+  width: 17rem !important;
+  height: 20rem !important;
   margin-bottom: 25px !important;
 }
 #cars .container .row .contant_cars .cars img {
@@ -311,6 +305,51 @@ html {
 }
 #contact .container .row .info ul li i:hover {
   color: black;
+}
+
+#register .contant .card {
+  padding: 50px !important;
+  box-shadow: 3px 3px 15px #c4c4c4;
+  border: none !important;
+  border-radius: 10px !important;
+}
+#register .contant .card h2 {
+  font-weight: bold;
+  margin-bottom: 20px !important;
+  border-radius: 2px;
+  padding-left: 10px !important;
+  border-left: 3px solid red !important;
+}
+#register .contant .card p {
+  color: black;
+  opacity: 0.7;
+}
+#register .contant .card form input {
+  border-radius: 7px !important;
+}
+#register .contant .card form label sup {
+  color: red;
+}
+#register .contant .card form #confirm_password {
+  margin-bottom: 20px !important;
+}
+#register .contant .card form .row .col #btn_register {
+  background-color: black;
+  color: white;
+  padding: 7px 55px;
+  box-shadow: 3px 3px 15px #c4c4c4;
+  border-radius: 5px !important;
+}
+#register .contant .card form .row .col #btn_register:hover {
+  color: black !important;
+  background-color: white !important;
+  border: 2px solid black;
+  padding: 6px 54px !important;
+  box-shadow: none !important;
+}
+#register .contant .card form .row .col .link {
+  font-style: italic;
+  margin-left: 10px !important;
 }
 
 /*# sourceMappingURL=style.css.map */

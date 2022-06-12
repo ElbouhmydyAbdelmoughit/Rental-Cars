@@ -19,10 +19,9 @@
   <div class="container" id="about" data-aos="fade-up" data-aos-duration="1000">
     <div class="row col-12 text-wrap d-md-flex d-block">
       <div class="col-6" id="image_about">
-        <img class="img-fluid w-100 img-responcive d-none d-md-block" src="assets/img/img_about.jpg" alt="image about"
-          id="img">
+        <img class="img-fluid  d-none d-md-block" src="assets/img/img-body_copy.png" alt="image about" id="img">
       </div>
-      <div class="col-12 col-md-6 text-start text-center text-md-start">
+      <div class="contant_about col-12 col-md-6 text-start text-center text-md-start">
         <span>About Us</span>
         <h3 class="fw-bold my-2">Welcome to YOU<span>CAR</span></h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio et odit
@@ -44,10 +43,10 @@
     <div class="row text-center">
       <div class="contant_card col-12 col-lg-3 col-md-6">
         <div class="card">
-          <div class="card-body">
-            <img src="assets\img\team1.jpg" alt="image team" class="img-fluid  w-50">
-            <h3 class="">John Smith</h3>
-            <h5 class="">UI/UX Designer</h5>
+          <img src="assets\img\Myphoto.jpg" alt="image team" class=" img-thumbnail">
+          <div class="card-body mt-0 pt-0">
+            <h3 class="text-wrap">Omar Alaoui</h3>
+            <h5 class="text-wrap">Designer Web</h5>
             <div class="icons d-flex align-contant-center justify-content-center">
               <li><i class="fa-brands fa-facebook-f"></i></li>
               <li><i class="bi bi-instagram"></i></li>
@@ -58,10 +57,10 @@
       </div>
       <div class="contant_card col-12 col-lg-3 col-md-6">
         <div class="card">
-          <div class="card-body">
-            <img src="assets\img\team4.jpg" alt="image team" class="img-fluid  w-50">
-            <h3 class="">John Smith</h3>
-            <h5 class="">UI/UX Designer</h5>
+          <img src="assets\img\team3.jpg" alt="image team" class="img-thumbnail">
+          <div class="card-body mt-0 pt-0">
+            <h3 class="text-wrap">Alessia Stasi</h3>
+            <h5 class="text-wrap">RH</h5>
             <div class="icons d-flex align-contant-center justify-content-center">
               <li><i class="fa-brands fa-facebook-f"></i></li>
               <li><i class="bi bi-instagram"></i></li>
@@ -72,10 +71,10 @@
       </div>
       <div class="contant_card col-12 col-lg-3 col-md-6">
         <div class="card">
-          <div class="card-body">
-            <img src="assets\img\team2.jpg" alt="image team" class="img-fluid  w-50">
-            <h3 class="">John Smith</h3>
-            <h5 class="">UI/UX Designer</h5>
+          <img src="assets\img\team4.jpg" alt="image team" class="img-thumbnail">
+          <div class="card-body mt-0 pt-0">
+            <h3 class="text-wrap">Ahmed Ali </h3>
+            <h5 class="text-wrap">Back-End laravel</h5>
             <div class="icons d-flex align-contant-center justify-content-center">
               <li><i class="fa-brands fa-facebook-f"></i></li>
               <li><i class="bi bi-instagram"></i></li>
@@ -86,10 +85,10 @@
       </div>
       <div class="contant_card col-12 col-lg-3 col-md-6">
         <div class="card">
-          <div class="card-body">
-            <img src="assets\img\team3.jpg" alt="image team" class="img-fluid  w-50">
-            <h3 class="">John Smith</h3>
-            <h5 class="">UI/UX Designer</h5>
+          <img src="assets\img\team2.jpg" alt="image team" class="img-thumbnail">
+          <div class="card-body mt-0 pt-0">
+            <h3 class="text-wrap">John Smith</h3>
+            <h5 class="text-wrap">Frant-End</h5>
             <div class="icons d-flex align-contant-center justify-content-center">
               <li><i class="fa-brands fa-facebook-f"></i></li>
               <li><i class="bi bi-instagram"></i></li>
@@ -108,7 +107,7 @@
     <div class="title">
       <h3 class="fw-bold my-5">All Cars</h3>
     </div>
-    <div class="row text-center mb-5">
+    <div class="row text-center col-12 mb-5">
       <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
         <div class="cars shadow rounded-3">
           <img class="card-img-top rounded-top" src="assets\img\Range_Sport.jpg" alt="Card image Range Rover Sport">
@@ -116,7 +115,7 @@
             <span>2023</span>
             <h5>Range Rover Sport</h5>
             <p>100 $/D</p>
-            <a href="#" class="btn">Rent Now</a>
+            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
           </div>
         </div>
       </div>
@@ -127,7 +126,7 @@
             <span>2021</span>
             <h5>Mercedes E 63s</h5>
             <p>220 $/D</p>
-            <a href="#" class="btn">Rent Now</a>
+            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
           </div>
         </div>
       </div>
@@ -138,7 +137,7 @@
             <span>2021</span>
             <h5>Mercedes GLE AMG</h5>
             <p>300 $/D</p>
-            <a href="#" class="btn">Rent Now</a>
+            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
           </div>
         </div>
       </div>
@@ -149,54 +148,52 @@
             <span>2020</span>
             <h5>Mini Cooper</h5>
             <p>90 $/D</p>
-            <a href="#" class="btn">Rent Now</a>
+            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
           </div>
         </div>
       </div>
-      <div class="row text-center mb-5">
-        <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
-          <div class="cars shadow rounded-3">
-            <img class="card-img-top rounded-top" src="assets\img\Ford_Mustang.jpg" alt="Card image Range Rover Sport">
-            <div class="card-body px-3 pb-3">
-              <span>2015</span>
-              <h5>Ford Mustang</h5>
-              <p>200 $/D</p>
-              <a href="#" class="btn">Rent Now</a>
-            </div>
+      <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
+        <div class="cars shadow rounded-3">
+          <img class="card-img-top rounded-top" src="assets\img\Ford_Mustang.jpg" alt="Card image Range Rover Sport">
+          <div class="card-body px-3 pb-3">
+            <span>2015</span>
+            <h5>Ford Mustang</h5>
+            <p>200 $/D</p>
+            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
           </div>
         </div>
-        <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
-          <div class="cars shadow rounded-3">
-            <img class="card-img-top rounded-top" src="assets\img\Audi_RS_6.jpg" alt="Card image Range Rover Sport">
-            <div class="card-body px-3 pb-3">
-              <span>2020</span>
-              <h5>Audi RS 6</h5>
-              <p>300 $/D</p>
-              <a href="#" class="btn">Rent Now</a>
-            </div>
+      </div>
+      <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
+        <div class="cars shadow rounded-3">
+          <img class="card-img-top rounded-top" src="assets\img\Audi_RS_6.jpg" alt="Card image Range Rover Sport">
+          <div class="card-body px-3 pb-3">
+            <span>2020</span>
+            <h5>Audi RS 6</h5>
+            <p>300 $/D</p>
+            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
           </div>
         </div>
-        <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
-          <div class="cars shadow rounded-3">
-            <img class="card-img-top rounded-top" src="assets\img\range_rover_velar.jpg"
-              alt="Card image Range Rover Sport">
-            <div class="card-body px-3 pb-3">
-              <span>2022</span>
-              <h5>Range Rover Velar</h5>
-              <p>100 $/D</p>
-              <a href="#" class="btn">Rent Now</a>
-            </div>
+      </div>
+      <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
+        <div class="cars shadow rounded-3">
+          <img class="card-img-top rounded-top" src="assets\img\range_rover_velar.jpg"
+            alt="Card image Range Rover Sport">
+          <div class="card-body px-3 pb-3">
+            <span>2022</span>
+            <h5>Range Rover Velar</h5>
+            <p>100 $/D</p>
+            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
           </div>
         </div>
-        <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
-          <div class="cars shadow rounded-3">
-            <img class="card-img-top rounded-top" src="assets\img\mercedes4.jpg" alt="Card image Range Rover Sport">
-            <div class="card-body px-3 pb-3">
-              <span>2022</span>
-              <h5>Mercedes Class G</h5>
-              <p>400 $/D</p>
-              <a href="#" class="btn">Rent Now</a>
-            </div>
+      </div>
+      <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
+        <div class="cars shadow rounded-3">
+          <img class="card-img-top rounded-top" src="assets\img\mercedes4.jpg" alt="Card image Range Rover Sport">
+          <div class="card-body px-3 pb-3">
+            <span>2022</span>
+            <h5>Mercedes Class G</h5>
+            <p>400 $/D</p>
+            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
           </div>
         </div>
       </div>
@@ -264,5 +261,4 @@
     </section>
   </div>
 </div>
-
 <?php require APPROOT . '/views/inc/footer.php'; ?>
