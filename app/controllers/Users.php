@@ -12,7 +12,7 @@ class Users extends Controller
       // Process form
 
       // Sanitize POST data
-      $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+      // $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
       // Init data
       $data = [
@@ -84,7 +84,7 @@ class Users extends Controller
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       // Process form
       // Sanitize POST data
-      $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+      // $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
       // Init data
       $data = [

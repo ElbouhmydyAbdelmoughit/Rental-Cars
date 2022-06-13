@@ -291,10 +291,17 @@ html{
         input{
           border-color: $color-primary !important;
           border-radius: 5px !important;
+          &:focus{
+            border-color: $color-black !important;
+          }
         }
         textarea{
           border-color: $color-primary !important;
-          min-height: 10rem;
+          min-height: 10rem !important;
+          max-height: 10rem !important;
+          &:focus{
+            border-color: $color-black !important;
+          }
         }
       }
       .button{
@@ -302,10 +309,12 @@ html{
           border-radius: 5px !important;
           color: $color-white !important;
           background-color: $color-primary !important;
+          padding: 5px 100px !important;
           &:hover{
-            color: $color-black !important;
+            padding: 4px 96px !important;
+            color: $color-primary !important;
             background-color: $color-white !important;
-            border: 2px solid $color-black;
+            border: 2px solid $color-primary;
           }
         }
       }

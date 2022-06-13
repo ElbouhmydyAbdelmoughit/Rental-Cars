@@ -286,19 +286,28 @@ html {
   border-color: red !important;
   border-radius: 5px !important;
 }
+#contact .container .row form input:focus {
+  border-color: black !important;
+}
 #contact .container .row form textarea {
   border-color: red !important;
-  min-height: 10rem;
+  min-height: 10rem !important;
+  max-height: 10rem !important;
+}
+#contact .container .row form textarea:focus {
+  border-color: black !important;
 }
 #contact .container .row .button a {
   border-radius: 5px !important;
   color: white !important;
   background-color: red !important;
+  padding: 5px 100px !important;
 }
 #contact .container .row .button a:hover {
-  color: black !important;
+  padding: 4px 96px !important;
+  color: red !important;
   background-color: white !important;
-  border: 2px solid black;
+  border: 2px solid red;
 }
 #contact .container .row .info ul li i {
   color: red;
