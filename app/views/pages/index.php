@@ -107,7 +107,7 @@
     <div class="title">
       <h3 class="fw-bold my-5">All Cars</h3>
     </div>
-    <div class="row text-center col-12 mb-5">
+    <div class="row text-center mb-5">
       <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
         <div class="cars shadow rounded-3">
           <img class="card-img-top rounded-top" src="assets\img\Range_Sport.jpg" alt="Card image Range Rover Sport">
