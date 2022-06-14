@@ -25,12 +25,18 @@
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact Us</a>
         </li>
+        <?php if (isset($_SESSION['user_id'])) : ?>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo URLROOT; ?>/users/logout">Logout</a>
+        </li>
+        <?php else : ?>
         <li class="nav-item">
           <a class="nav-link" href="<?= URLROOT ?>/users/register" id="btn_sigin">Register</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?= URLROOT ?>/users/login" id="btn_login">Login</a>
         </li>
+        <?php endif; ?>
     </div>
   </div>
 </nav>
