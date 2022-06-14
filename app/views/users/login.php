@@ -1,13 +1,16 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
 <div class="container">
   <!------section Login page----->
+  <div class="my-3">
+    <?php flash('register_success'); ?>
+  </div>
   <div id="container_fluid" class="container-fluid pt-4">
     <div id="contant" class="contant  col-12 d-flex text-nowrap">
-      <div class="col-lg-6 col-12 pe-3 ps-5 pt-4">
+      <div class=" col-lg-6 col-12 pe-3 ps-5 pt-4">
         <div>
           <h2 id="text_login">Login</h2>
         </div>
-        <form action="<?php echo URLROOT; ?>/users/login" method="POST">
+        <form action="<?php echo URLROOT; ?>/users/login" method="POST" class="mb-5">
           <!-- Email input -->
           <div class="form-outline mb-4">
             <input type="email" name="email" placeholder="Email"
@@ -35,12 +38,9 @@
           <!-- Submit button -->
           <button type="submit" id="login" class="btn form-control  mb-4">Log in</button>
           <!-- Register buttons -->
-          <div class="text-start">
-            <p class="text-dark fst-italic"><small> If don't have accout <a href="<?= URLROOT ?>/users/register"
-                  class="text-primary">Register</a>
-                to
-                create account
-                !</small></p>
+          <div class="text-start mb-3">
+            <p class="text-dark fst-italic text-wrap pb-3"><small> Not a member? <a href="<?= URLROOT ?>/users/register"
+                  class="text-primary">Register</a></small></p>
           </div>
         </form>
       </div>
