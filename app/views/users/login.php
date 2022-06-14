@@ -1,28 +1,27 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
 <div class="container">
   <!------section Login page----->
-  <div class="my-3">
-    <?php flash('register_success'); ?>
-  </div>
   <div id="container_fluid" class="container-fluid pt-4">
-    <div id="contant" class="contant  col-12 d-flex text-nowrap">
+    <div id="contant" class="contant  col-12 d-flex">
       <div class=" col-lg-6 col-12 pe-3 ps-5 pt-4">
         <div>
+          <div class="my-2">
+            <?php flash('register_success'); ?>
+          </div>
           <h2 id="text_login">Login</h2>
         </div>
         <form action="<?php echo URLROOT; ?>/users/login" method="POST" class="mb-5">
           <!-- Email input -->
           <div class="form-outline mb-4">
             <input type="email" name="email" placeholder="Email"
-              class="form-control form-control-lg <?php echo (!empty($data['email_err'])) ? 'is-invalid' : ''; ?>"
+              class="form-control <?php echo (!empty($data['email_err'])) ? 'is-invalid' : ''; ?>"
               value="<?php echo $data['email']; ?>" />
             <span class="invalid-feedback"><?php echo $data['email_err']; ?></span>
           </div>
           <!-- Password input -->
           <div class="form-outline mb-4">
             <input type="password" name="password"
-              class="form-control form-control-lg <?php echo (!empty($data['password_err'])) ? 'is-invalid' : ''; ?>"
-              value="<?php echo $data['password']; ?>/>
+              class="form-control <?php echo (!empty($data['password_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['password']; ?>/>
             <span class=" invalid-feedback"><?php echo $data['password_err']; ?></span>
           </div>
           <!-- 2 column grid layout for inline styling -->

@@ -1,5 +1,5 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
-<div class="row" id="register">
+<div class="row col-12" id="register">
   <div class="contant col-md-6 mx-auto">
     <div class="card card-body my-5">
       <h2>Create An Account</h2>
