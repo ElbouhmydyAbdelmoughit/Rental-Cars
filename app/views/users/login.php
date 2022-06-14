@@ -1,14 +1,14 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
+<div class="my-3 col-12 text-center mx-auto">
+  <?php flash('register_success'); ?>
+</div>
 <div class="container">
   <!------section Login page----->
   <div id="container_fluid" class="container-fluid pt-4">
     <div id="contant" class="contant  col-12 d-flex">
       <div class=" col-lg-6 col-12 pe-3 ps-5 pt-4">
         <div>
-          <div class="my-2">
-            <?php flash('register_success'); ?>
-          </div>
-          <h2 id="text_login">Login</h2>
+          <h2 class="mt-2" id="text_login">Login</h2>
         </div>
         <form action="<?php echo URLROOT; ?>/users/login" method="POST" class="mb-5">
           <!-- Email input -->

@@ -14,7 +14,10 @@ class Core
   public function __construct()
   {
     $url = $this->getUrl();
-
+    if ($url == '') {
+      $url[] = 'Pages';
+      $url[] = 'index';
+    }
     //Look in controllers for forst value
     if (file_exists('../app/controllers/' . ucwords($url[0]) . '.php')) {
 
