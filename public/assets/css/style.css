@@ -364,7 +364,7 @@ html {
 #sidebar {
   background-color: black !important;
   box-shadow: 5px 5px 15px #696969;
-  color: white;
+  color: white !important;
   height: 100vh;
   width: 80px;
   display: flex;
@@ -379,6 +379,9 @@ html {
 }
 #sidebar ul li:last-child {
   margin-top: 250px;
+}
+#sidebar ul li a {
+  color: white !important;
 }
 
 #dashboard .row .contant #table table {
