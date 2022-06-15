@@ -1,12 +1,12 @@
 <div class="bg-white" id="sidebar">
   <ul>
     <li class="mb-5">
-      <a href="<?= URLROOT ?>">
+      <a href="<?= URLROOT ?>/home" data-bs-toggle="tooltip" data-bs-placement="right" title="Car">
         <i class="bi bi-house-door-fill"></i>
       </a>
     </li>
     <li class="mb-5">
-      <a href="<?= URLROOT ?>" data-bs-toggle="tooltip" data-bs-placement="right" title="Home">
+      <a href="<?= URLROOT ?>/cars/index" data-bs-toggle="tooltip" data-bs-placement="right" title="Car">
         <i class="fa-solid fa-car"></i>
       </a>
     </li>
@@ -21,7 +21,7 @@
       </a>
     </li>
     <li id="logout" class="mb-5">
-      <a href="<?= URLROOT ?>" data-bs-toggle="tooltip" data-bs-placement="right" title="Logout" style="color: red;">
+      <a href="<?php echo URLROOT; ?>/users/logout" data-bs-toggle="tooltip" data-bs-placement="right" title="Logout">
         <i class="fa-solid fa-right-from-bracket"></i>
       </a>
     </li>
