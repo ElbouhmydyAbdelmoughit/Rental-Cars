@@ -17,7 +17,7 @@ class Car
 
   public function addCar($data)
   {
-    $this->db->query('INSERT INTO car VALUES(:model, :name, :price, :image)');
+    $this->db->query('INSERT INTO car (model, name, price, image) VALUES(:model, :name, :price, :image)');
     // Bind values
     $this->db->bind(':model', $data['model']);
     $this->db->bind(':name', $data['name']);

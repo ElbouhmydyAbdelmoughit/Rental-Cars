@@ -4,7 +4,7 @@
       <?php require APPROOT . '/views/inc/header_sidebar.php'; ?>
     </div>
     <div class="col-6 mx-auto  rounded-3 bg-light mt-5">
-      <form action="<?php echo URLROOT; ?>/cars/add" method="post" class="p-5">
+      <form action="<?php echo URLROOT; ?>/cars/add" method="post" class="p-5" enctype="multipart/form-data">
         <div class="mb-3">
           <input type="text" name="model" placeholder="Model"
             class="form-control <?php echo (!empty($data['model_err'])) ? 'is-invalid' : ''; ?>"
