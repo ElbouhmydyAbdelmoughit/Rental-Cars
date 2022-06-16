@@ -17,19 +17,21 @@
           </thead>
           <tbody>
             <?php foreach ($data['cars'] as $car) : ?>
-            <th><?php echo $car->id; ?></th>
-            <td><?php echo $car->model; ?></td>
-            <td><?php echo $car->name; ?></td>
-            <td><?php echo $car->price; ?></td>
-            <td>
-              <div class="operation">
-                <a class="me-3 text-success" href="<?php echo URLROOT; ?>/cars/update"><i class="bi bi-pen"></i></a>
-                <a class="ms-3 text-danger" href="<?php echo URLROOT; ?>/cars/delete"><i class="bi bi-trash"></i></a>
-                <a class="ms-3 text-info" href=" <?php echo URLROOT; ?>/cars/add">
-                  <i class="bi bi-plus-circle"></i>
-                </a>
-              </div>
-            </td>
+            <tr>
+              <th><?php echo $car->id; ?></th>
+              <td><?php echo $car->model; ?></td>
+              <td><?php echo $car->name; ?></td>
+              <td><?php echo $car->price; ?></td>
+              <td>
+                <div class="operation">
+                  <a class="me-3 text-success" href="<?php echo URLROOT; ?>/cars/update"><i class="bi bi-pen"></i></a>
+                  <a class="ms-3 text-danger" href="<?php echo URLROOT; ?>/cars/delete"><i class="bi bi-trash"></i></a>
+                  <a class="ms-3 text-info" href=" <?php echo URLROOT; ?>/cars/add">
+                    <i class="bi bi-plus-circle"></i>
+                  </a>
+                </div>
+              </td>
+            </tr>
             <?php endforeach; ?>
           </tbody>
         </table>
