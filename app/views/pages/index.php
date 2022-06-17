@@ -197,6 +197,20 @@
           </div>
         </div>
       </div>
+      <?php foreach ($data['cars'] as $car) : ?>
+      <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
+        <div class="cars shadow rounded-3">
+          <img class="card-img-top rounded-top" src="<?= URLROOT ?>/assets\img\<?php echo $car->image; ?>"
+            alt="Card image Range Rover Sport">
+          <div class="card-body px-3 pb-3">
+            <span><?php echo $car->model; ?></span>
+            <h5><?php echo $car->name; ?></h5>
+            <p><?php echo $car->price; ?>.'$/D'</p>
+            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
+          </div>
+        </div>
+      </div>
+      <?php endforeach; ?>
     </div>
   </div>
 </div>

@@ -5,6 +5,9 @@
         <?php require APPROOT . '/views/inc/header_sidebar.php'; ?>
       </div>
       <div class="col-10 mt-5 table-responsive">
+        <div class="col-6 text-center mx-auto my-5" role="alert">
+          <?php flash('car_message'); ?>
+        </div>
         <table class="table border border-1 border-dark text-nowrap" style="min-width: 600px;">
           <thead>
             <tr>
