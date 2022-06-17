@@ -3,7 +3,10 @@ $color-black:black;
 $color-white:rgb(255, 255, 255);
 $color-login:#F3F2EF;
 $color-shadow:#c4c4c4;
+$color-shadow-dashboard:#696969;
 $color-icons: #34B3F1;
+$color-bg-dashboard: rgb(239, 239, 239);
+
 
 /*mixin for center element*/
 @mixin center {
@@ -334,6 +337,7 @@ html{
   }
 }
 #register{
+  // margin: 0px !important;
   .contant{
     .card{
       padding: 50px !important;
@@ -384,6 +388,40 @@ html{
               margin-left: 10px !important;
             }
           }
+        }
+      }
+    }
+  }
+}
+// style sidebar dashboard
+#sidebar{
+  background-color: $color-black !important;
+  box-shadow: 5px 5px 15px $color-shadow-dashboard;
+  color: $color-white !important;
+  height: 100vh;
+  width: 80px;
+  display: flex;
+  ul{
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    li{
+      list-style: none;
+      &:last-child{
+        margin-top: 250px;
+      }
+      a{
+        color: $color-white !important;
+      }
+    }
+  }
+}
+#dashboard{
+  .row{
+    .contant{
+      #table{
+        table{
+          min-width: 800px !important;
         }
       }
     }

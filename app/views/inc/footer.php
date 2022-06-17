@@ -6,11 +6,31 @@
     <ul id="ul_icons">
       <h1 class="fw-bold">YOU<span class="text-white fw-bold">CAR</span></h1>
       <ul class="d-flex" id="icons">
-        <li><i class="fa-brands fa-facebook-f"></i></li>
-        <li><i class="bi bi-tiktok"></i></li>
-        <li><i class="fa-brands fa-linkedin-in"></i></li>
-        <li><i class="bi bi-instagram"></i></li>
-        <li><i class="bi bi-twitter"></i></li>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100028884036953" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@elbouhmydy_shop" target="_blank">
+            <i class="bi bi-tiktok"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/abdelmoughit-elbouhmydy-0109231b9/" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/elbouhmydyabdelmoughit_164/?hl=fr" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Abdelmoughit_E" target="_blank">
+            <i class="bi bi-twitter"></i>
+          </a>
+        </li>
       </ul>
     </ul>
     <ul>
