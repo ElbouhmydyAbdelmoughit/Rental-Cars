@@ -108,104 +108,15 @@
       <h3 class="fw-bold my-5">All Cars</h3>
     </div>
     <div class="row text-center mb-5">
-      <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
-        <div class="cars shadow rounded-3">
-          <img class="card-img-top rounded-top" src="assets\img\Range_Sport.jpg" alt="Card image Range Rover Sport">
-          <div class="card-body px-3 pb-3">
-            <span>2023</span>
-            <h5>Range Rover Sport</h5>
-            <p>100 $/D</p>
-            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
-        <div class="cars shadow rounded-3">
-          <img class="card-img-top rounded-top" src="assets\img\mercedes1.jpeg" alt="Card image Range Rover Sport">
-          <div class="card-body px-3 pb-3">
-            <span>2021</span>
-            <h5>Mercedes E 63s</h5>
-            <p>220 $/D</p>
-            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
-        <div class="cars shadow rounded-3">
-          <img class="card-img-top rounded-top" src="assets\img\mercedes2.jpeg" alt="Card image Range Rover Sport">
-          <div class="card-body px-3 pb-3">
-            <span>2021</span>
-            <h5>Mercedes GLE AMG</h5>
-            <p>300 $/D</p>
-            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
-        <div class="cars shadow rounded-3">
-          <img class="card-img-top rounded-top" src="assets\img\Mini_Cooper.jpg" alt="Card image Range Rover Sport">
-          <div class="card-body px-3 pb-3">
-            <span>2020</span>
-            <h5>Mini Cooper</h5>
-            <p>90 $/D</p>
-            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
-        <div class="cars shadow rounded-3">
-          <img class="card-img-top rounded-top" src="assets\img\Ford_Mustang.jpg" alt="Card image Range Rover Sport">
-          <div class="card-body px-3 pb-3">
-            <span>2015</span>
-            <h5>Ford Mustang</h5>
-            <p>200 $/D</p>
-            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
-        <div class="cars shadow rounded-3">
-          <img class="card-img-top rounded-top" src="assets\img\Audi_RS_6.jpg" alt="Card image Range Rover Sport">
-          <div class="card-body px-3 pb-3">
-            <span>2020</span>
-            <h5>Audi RS 6</h5>
-            <p>300 $/D</p>
-            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
-        <div class="cars shadow rounded-3">
-          <img class="card-img-top rounded-top" src="assets\img\range_rover_velar.jpg"
-            alt="Card image Range Rover Sport">
-          <div class="card-body px-3 pb-3">
-            <span>2022</span>
-            <h5>Range Rover Velar</h5>
-            <p>100 $/D</p>
-            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
-        <div class="cars shadow rounded-3">
-          <img class="card-img-top rounded-top" src="assets\img\mercedes4.jpg" alt="Card image Range Rover Sport">
-          <div class="card-body px-3 pb-3">
-            <span>2022</span>
-            <h5>Mercedes Class G</h5>
-            <p>400 $/D</p>
-            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
-          </div>
-        </div>
-      </div>
       <?php foreach ($data['cars'] as $car) : ?>
       <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
         <div class="cars shadow rounded-3">
           <img class="card-img-top rounded-top" src="<?= URLROOT ?>/assets\img\<?php echo $car->image; ?>"
-            alt="Card image Range Rover Sport">
+            alt="Card image <?= $car->name ?>">
           <div class="card-body px-3 pb-3">
-            <span><?php echo $car->model; ?></span>
+            <span><?php echo $car->model; ?> </span>
             <h5><?php echo $car->name; ?></h5>
-            <p><?php echo $car->price; ?>.'$/D'</p>
+            <p><?php echo $car->price; ?> $/D</p>
             <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
           </div>
         </div>
