@@ -25,8 +25,7 @@
         </div>
         <div class="mb-3">
           <input type="file" name="image" accept=".png, .jpg, .jpeg" placeholder="Image"
-            class="form-control <?php echo (!empty($data['image_err'])) ? 'is-invalid' : ''; ?>"
-            value="<?php echo $data['image']; ?>">
+            class="form-control <?php echo (!empty($data['image_err'])) ? 'is-invalid' : ''; ?>">
           <span class="invalid-feedback"><?php echo $data['image_err']; ?></span>
         </div>
         <div class="mb-3">

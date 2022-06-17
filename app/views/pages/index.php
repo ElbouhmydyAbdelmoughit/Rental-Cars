@@ -43,9 +43,9 @@
     <div class="row text-center">
       <div class="contant_card col-12 col-lg-3 col-md-6">
         <div class="card">
-          <img src="assets\img\Myphoto.jpg" alt="image team" class=" img-thumbnail">
+          <img src="https://i.imgur.com/hczKIze.jpg" alt="image team" class=" img-thumbnail">
           <div class="card-body mt-0 pt-0">
-            <h3 class="text-wrap">Omar Alaoui</h3>
+            <h3 class="text-wrap">Florian Smith</h3>
             <h5 class="text-wrap">Designer Web</h5>
             <div class="icons d-flex align-contant-center justify-content-center">
               <li><i class="fa-brands fa-facebook-f"></i></li>
@@ -57,7 +57,7 @@
       </div>
       <div class="contant_card col-12 col-lg-3 col-md-6">
         <div class="card">
-          <img src="assets\img\team3.jpg" alt="image team" class="img-thumbnail">
+          <img src="assets\img\team8.webp" alt="image team" class="img-thumbnail">
           <div class="card-body mt-0 pt-0">
             <h3 class="text-wrap">Alessia Stasi</h3>
             <h5 class="text-wrap">RH</h5>
@@ -71,9 +71,9 @@
       </div>
       <div class="contant_card col-12 col-lg-3 col-md-6">
         <div class="card">
-          <img src="assets\img\team4.jpg" alt="image team" class="img-thumbnail">
+          <img src="assets\img\team7.jpg" alt="image team" class="img-thumbnail">
           <div class="card-body mt-0 pt-0">
-            <h3 class="text-wrap">Ahmed Ali </h3>
+            <h3 class="text-wrap">Karina Doroni</h3>
             <h5 class="text-wrap">Back-End laravel</h5>
             <div class="icons d-flex align-contant-center justify-content-center">
               <li><i class="fa-brands fa-facebook-f"></i></li>
@@ -85,7 +85,7 @@
       </div>
       <div class="contant_card col-12 col-lg-3 col-md-6">
         <div class="card">
-          <img src="assets\img\team2.jpg" alt="image team" class="img-thumbnail">
+          <img src="assets\img\team5.jpg" alt="image team" class="img-thumbnail">
           <div class="card-body mt-0 pt-0">
             <h3 class="text-wrap">John Smith</h3>
             <h5 class="text-wrap">Frant-End</h5>
