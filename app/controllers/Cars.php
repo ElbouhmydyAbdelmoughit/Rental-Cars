@@ -6,6 +6,7 @@ class Cars extends Controller
     if (!isLoggedIn()) {
       redirect('users/login');
     }
+
     $this->carModel = $this->model('Car');
   }
 
@@ -83,16 +84,18 @@ class Cars extends Controller
   }
 
   // Delete car to website
-  public function delete()
+  public function delete($id)
   {
-    $data = [];
-    $this->view('cars/delete', $data);
+    if ($this->carModel->deleteCar($id)) {
+      flash('car_message', 'Car Removed');
+      redirect('cars');
+    } else {
+      die('Something went wrong');
+    }
   }
 
   // Update car to website
   public function update()
   {
-    $data = [];
-    $this->view('cars/update', $data);
   }
 }

@@ -31,4 +31,36 @@ class Car
       return false;
     }
   }
+
+  public function updateCar($data)
+  {
+    $this->db->query('UPDATE car SET model = :model, name = :name, price = :price, image = :image WHERE id = :id');
+    // Bind values
+    $this->db->bind(':id', $data['id']);
+    $this->db->bind(':model', $data['model']);
+    $this->db->bind(':name', $data['name']);
+    $this->db->bind(':price', $data['price']);
+    $this->db->bind(':image', $data['image']);
+
+    // Execute
+    if ($this->db->execute()) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  public function deleteCar($id)
+  {
+    $this->db->query('DELETE FROM car WHERE id = :id');
+    // Bind values
+    $this->db->bind(':id', $id);
+
+    // Execute
+    if ($this->db->execute()) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
