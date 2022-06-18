@@ -34,7 +34,8 @@ class Car
 
   public function updateCar($data)
   {
-    $this->db->query('UPDATE car SET model = :model, name = :name, price = :price, image = :image WHERE id = :id');
+
+    $this->db->query('UPDATE `car` SET `model` = :model, `name` = :name, `price` = :price, `image` = :image WHERE id = :id');
     // Bind values
     $this->db->bind(':id', $data['id']);
     $this->db->bind(':model', $data['model']);
@@ -62,5 +63,15 @@ class Car
     } else {
       return false;
     }
+  }
+
+  public function getCarById($id)
+  {
+    $this->db->query('SELECT * FROM car WHERE id = :id');
+    $this->db->bind(':id', $id);
+
+    $row = $this->db->single();
+
+    return $row;
   }
 }
