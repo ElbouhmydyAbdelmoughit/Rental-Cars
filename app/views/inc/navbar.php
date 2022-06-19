@@ -25,6 +25,19 @@
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact Us</a>
         </li>
+        <?php
+        if (isset($_SESSION['user_role'])) {
+
+          if (!empty($_SESSION['user_role'] == 1)) { ?>
+        <li class="nav-item">
+          <a class="nav-link" href="<?= URLROOT ?>/cars/index">Dashboard</a>
+        </li>
+        <?php } else { ?>
+        <li class="nav-item">
+          <a class="nav-link" href="<?= URLROOT ?>/cars/index"></a>
+        </li>
+        <?php }
+        } ?>
         <?php if (isset($_SESSION['user_id'])) : ?>
         <li class="nav-item">
           <a class="nav-link" href="<?php echo URLROOT; ?>/users/logout">Logout</a>
@@ -37,6 +50,7 @@
           <a class="nav-link" href="<?= URLROOT ?>/users/login" id="btn_login">Login</a>
         </li>
         <?php endif; ?>
+      </ul>
     </div>
   </div>
 </nav>

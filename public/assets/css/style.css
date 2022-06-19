@@ -1,5 +1,10 @@
 /*mixin for center element*/
 /*mixin box shadow for button */
+::-webkit-scrollbar {
+  width: 10px;
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -297,13 +302,13 @@ html {
 #contact .container .row form textarea:focus {
   border-color: black !important;
 }
-#contact .container .row .button a {
+#contact .container .row .button input {
   border-radius: 5px !important;
   color: white !important;
   background-color: red !important;
   padding: 5px 100px !important;
 }
-#contact .container .row .button a:hover {
+#contact .container .row .button input:hover {
   padding: 4px 96px !important;
   color: red !important;
   background-color: white !important;
@@ -386,6 +391,10 @@ html {
 
 #dashboard .row .contant #table table {
   min-width: 800px !important;
+}
+
+#payment {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
