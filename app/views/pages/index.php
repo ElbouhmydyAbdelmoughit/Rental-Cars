@@ -1,4 +1,7 @@
-<?php require APPROOT . '/views/inc/header.php'; ?>
+<?php
+require APPROOT . '/views/inc/header.php';
+
+?>
 <!-- ================= section Landing page ===================-->
 <div id="landing_page" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
   <div class="home container-fliud bg-white my-4" id="landingPage">
@@ -24,11 +27,11 @@
       <div class="contant_about col-12 col-md-6 text-start text-center text-md-start">
         <span>About Us</span>
         <h3 class="fw-bold my-2">Welcome to YOU<span>CAR</span></h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio et odit
-          voluptatem
-          repellendus vero cumque
-          aliquam illo, magnam, id sapiente tenetur? Tempora, illum reiciendis suscipit error aperiam consequatur vitae
-          eius.</p>
+        <p>
+          YouCar is the best Car rental in the world, here you can find the top cars with the best price, if you are
+          interested in our cars don't hesitate to contact us.
+          Our team is available everyday 7/7
+        </p>
       </div>
     </div>
   </div>
@@ -107,35 +110,40 @@
     <div class="title">
       <h3 class="fw-bold my-5">All Cars</h3>
     </div>
-    <div class="row text-center mb-5">
-      <?php foreach ($data['cars'] as $car) : ?>
-      <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
-        <div class="cars shadow rounded-3">
-          <img class="card-img-top rounded-top" src="<?= URLROOT ?>/assets\img\<?php echo $car->image; ?>"
-            alt="Card image <?= $car->name ?>">
-          <div class="card-body px-3 pb-3">
-            <span><?php echo $car->model; ?> </span>
-            <h5><?php echo $car->name; ?></h5>
-            <p><?php echo $car->price; ?> $/D</p>
-            <a href="<?php echo URLROOT; ?>/pages/payment" class="btn">Rent Now</a>
+    <form action="<?= URLROOT ?>/Pages/payment" method="POST">
+      <div class="row text-center mb-5">
+        <?php foreach ($data['cars'] as $car) : ?>
+        <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
+          <div class="cars shadow rounded-3">
+            <img class="card-img-top rounded-top" src="<?= URLROOT ?>/assets\img\<?php echo $car->image; ?>"
+              alt="Card image <?= $car->name ?>">
+            <div class="card-body px-3 pb-3">
+              <span><?php echo $car->model; ?> </span>
+              <h5><?php echo $car->name; ?></h5>
+              <p><?php echo $car->price; ?> $/D</p>
+              <a href="<?php echo URLROOT; ?>/Payments/Reserve" class="btn">Rent Now</a>
+            </div>
           </div>
         </div>
+        <?php endforeach; ?>
       </div>
-      <?php endforeach; ?>
-    </div>
+    </form>
   </div>
 </div>
 <!-- ================= section Contact Us page ===================-->
 <div class="contact" id="contact" data-aos="fade-up" data-aos-duration="1000">
   <div class="container">
     <section class="mb-4">
+      <div class="my-3">
+        <?php flash('send_message') ?>
+      </div>
       <h2 class="h1-responsive fw-bold text-center my-4">Contact Us</h2>
       <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us
         directly. Our team will come back to you within
         a matter of hours to help you.</p>
       <div class="row">
         <div class="col-md-9 mb-md-0 mb-5">
-          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+          <form id="contact-form" name="contact-form" action="<?= URLROOT ?>/Pages/contactUs" method="POST">
             <div class="row">
               <div class="col-md-6 my-3">
                 <div class="md-form mb-0">
@@ -144,7 +152,7 @@
               </div>
               <div class="col-md-6 my-3">
                 <div class="md-form mb-0">
-                  <input type="text" id="email" name="email" class="form-control" placeholder="Email">
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Email">
                 </div>
               </div>
             </div>
@@ -163,10 +171,10 @@
                 </div>
               </div>
             </div>
+            <div class="button text-center text-md-left">
+              <input type="submit" class="btn form-control" value="Send">
+            </div>
           </form>
-          <div class="button text-center text-md-left">
-            <a hraf="#" class="btn form-control">Send</a>
-          </div>
           <div class="status"></div>
         </div>
         <div class="info col-md-3 text-center">

@@ -123,6 +123,7 @@ class Users extends Controller
       // Check for user/email
       if ($this->userModel->findUserByEmail($data['email'])) {
         // User found
+
       } else {
         // User not found
         $data['email_err'] = 'No user found';
@@ -165,6 +166,7 @@ class Users extends Controller
     $_SESSION['user_id'] = $user->id;
     $_SESSION['user_email'] = $user->email;
     $_SESSION['user_name'] = $user->name;
+    $_SESSION['user_role'] = $user->role;
     redirect('home');
   }
 

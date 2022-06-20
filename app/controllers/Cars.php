@@ -6,6 +6,7 @@ class Cars extends Controller
     if (!isLoggedIn()) {
       redirect('users/login');
     }
+
     $this->carModel = $this->model('Car');
   }
 
@@ -21,7 +22,7 @@ class Cars extends Controller
     $this->view('cars/index', $data);
   }
 
-  // Add car to website
+  //=========== Add car to website ====================//
   public function add()
   {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -82,17 +83,84 @@ class Cars extends Controller
     }
   }
 
-  // Delete car to website
-  public function delete()
+  //=========== Delete car to website ====================//
+  public function delete($id)
   {
-    $data = [];
-    $this->view('cars/delete', $data);
+    if ($this->carModel->deleteCar($id)) {
+      flash('car_message', 'Car Removed');
+      redirect('cars');
+    } else {
+      die('Something went wrong');
+    }
   }
 
-  // Update car to website
-  public function update()
+  //=========== Update car to website ====================//
+  public function update($id)
   {
-    $data = [];
-    $this->view('cars/update', $data);
+
+    if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+
+      $car = $this->carModel->getCarById($id);
+
+      $data = [
+        'id' => $id,
+        'model' => $car->model,
+        'name' => $car->name,
+        'price' => $car->price,
+        'image' => $car->image
+      ];
+      $this->view('cars/update', $data);
+    }
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+      $data = [
+        'id' => $id,
+        'model' => trim($_POST['model']),
+        'name' => trim($_POST['name']),
+        'price' => trim($_POST['price']),
+        'image' => trim($_FILES['image']['name']),
+        'model_err' => '',
+        'name_err' => '',
+        'price_err' => '',
+        'image_err' => ''
+      ];
+      // validation
+      if (empty($data['model'])) {
+        $data['model_err'] = 'Please enter Model';
+      }
+      if (empty($data['name'])) {
+        $data['name_err'] = 'Please Enter Name';
+      }
+      if (empty($data['price'])) {
+        $data['price_err'] = 'Please Enter Price';
+      }
+      if (empty($data['image'])) {
+        $data['image_err'] = 'Please Enter Image';
+      }
+
+
+      // Mack sur no errors
+      if (empty($data['model_err']) && empty($data['name_err']) && empty($data['price_err']) && empty($data['image_err'])) {
+        // Validated and affich messages Car Added with function Flash
+        if ($this->carModel->updateCar($data)) {
+          flash('car_message', 'Car Updated');
+          redirect('cars/index');
+        } else {
+          die('Something went wrong');
+        }
+      } else {
+        // Load views with errors
+        $this->view('cars/update', $data);
+      }
+    } else {
+      $data = [
+        'model' => '',
+        'name' => '',
+        'price' => '',
+        'image' => ''
+      ];
+
+      $this->view('cars/update', $data);
+    }
   }
 }

@@ -19,6 +19,12 @@ $color-bg-dashboard: rgb(239, 239, 239);
 @mixin shadow {
   box-shadow: inset 3px 3px 20px $color-primary,3px 3px 20px $color-primary;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  display: none;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -308,7 +314,7 @@ html{
         }
       }
       .button{
-        a{
+        input{
           border-radius: 5px !important;
           color: $color-white !important;
           background-color: $color-primary !important;
@@ -423,6 +429,24 @@ html{
         table{
           min-width: 800px !important;
         }
+      }
+    }
+  }
+}
+#payment{
+  background-color: $color-white !important;
+  form{
+    #btn_reservation{
+      background-color: $color-primary !important;
+      border: none !important;
+      @include shadow();
+      color: $color-white;
+      &:hover{
+        background-color: $color-white !important;
+        border: 2px solid $color-primary !important;
+        padding: 4px 98px !important;
+        color: $color-primary !important;
+        box-shadow: none !important;
       }
     }
   }
