@@ -13,7 +13,8 @@ require APPROOT . '/views/inc/header.php';
         </div>
       </div>
       <div class="col-12 col-lg-6" id="section2_landing">
-        <img src="assets/img/img-body.png" class=" d-none d-md-block " id="img_body_landing_page" alt="image landing page">
+        <img src="assets/img/img-body.png" class=" d-none d-md-block " id="img_body_landing_page"
+          alt="image landing page">
       </div>
     </div>
   </div>
@@ -26,11 +27,11 @@ require APPROOT . '/views/inc/header.php';
       <div class="contant_about col-12 col-md-6 text-start text-center text-md-start">
         <span>About Us</span>
         <h3 class="fw-bold my-2">Welcome to YOU<span>CAR</span></h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio et odit
-          voluptatem
-          repellendus vero cumque
-          aliquam illo, magnam, id sapiente tenetur? Tempora, illum reiciendis suscipit error aperiam consequatur vitae
-          eius.</p>
+        <p>
+          YouCar is the best Car rental in the world, here you can find the top cars with the best price, if you are
+          interested in our cars don't hesitate to contact us.
+          Our team is available everyday 7/7
+        </p>
       </div>
     </div>
   </div>
@@ -112,17 +113,18 @@ require APPROOT . '/views/inc/header.php';
     <form action="<?= URLROOT ?>/Pages/payment" method="POST">
       <div class="row text-center mb-5">
         <?php foreach ($data['cars'] as $car) : ?>
-          <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
-            <div class="cars shadow rounded-3">
-              <img class="card-img-top rounded-top" src="<?= URLROOT ?>/assets\img\<?php echo $car->image; ?>" alt="Card image <?= $car->name ?>">
-              <div class="card-body px-3 pb-3">
-                <span><?php echo $car->model; ?> </span>
-                <h5><?php echo $car->name; ?></h5>
-                <p><?php echo $car->price; ?> $/D</p>
-                <a href="<?php echo URLROOT; ?>/Pages/payment" class="btn">Rent Now</a>
-              </div>
+        <div class="contant_cars col-12 col-lg-3 col-md-6 text-start">
+          <div class="cars shadow rounded-3">
+            <img class="card-img-top rounded-top" src="<?= URLROOT ?>/assets\img\<?php echo $car->image; ?>"
+              alt="Card image <?= $car->name ?>">
+            <div class="card-body px-3 pb-3">
+              <span><?php echo $car->model; ?> </span>
+              <h5><?php echo $car->name; ?></h5>
+              <p><?php echo $car->price; ?> $/D</p>
+              <a href="<?php echo URLROOT; ?>/Payments/Reserve" class="btn">Rent Now</a>
             </div>
           </div>
+        </div>
         <?php endforeach; ?>
       </div>
     </form>
@@ -164,7 +166,8 @@ require APPROOT . '/views/inc/header.php';
             <div class="row my-3">
               <div class="col-md-12">
                 <div class="md-form">
-                  <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Message"></textarea>
+                  <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"
+                    placeholder="Message"></textarea>
                 </div>
               </div>
             </div>

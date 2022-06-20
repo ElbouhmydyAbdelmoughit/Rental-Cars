@@ -434,5 +434,20 @@ html{
   }
 }
 #payment{
-  color: $color-white;
+  background-color: $color-white !important;
+  form{
+    #btn_reservation{
+      background-color: $color-primary !important;
+      border: none !important;
+      @include shadow();
+      color: $color-white;
+      &:hover{
+        background-color: $color-white !important;
+        border: 2px solid $color-primary !important;
+        padding: 4px 98px !important;
+        color: $color-primary !important;
+        box-shadow: none !important;
+      }
+    }
+  }
 }
