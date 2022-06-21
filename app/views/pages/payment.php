@@ -36,11 +36,11 @@
               <input type="date" class="form-control">
             </div>
             <div class="radio d-sm-flex">
-              <div class="inputRadio mb-3 text-center text-sm-start mt-5 " id="methpd_payment">
+              <div class="pay-method inputRadio mb-3 text-center text-sm-start mt-5 " id="methpd_payment">
                 <small class="text-start text-sm-start mb-3 d-block">Payment Method ?</small>
                 <input type="radio" name="radio1" id="radio1">
                 <label for="radio1" class="me-2">Card</label>
-                <input type="radio" onchange="Display();" name="radio1" id="radio2" class="ms-2">
+                <input type="radio" name="radio1" id="radio2" class="ms-2">
                 <label for="radio2">Cash</label>
               </div>
               <div class="inputRadio mb-3 text-center text-sm-end mt-5 ms-sm-5 mb-5" id="methpd_payment">
@@ -63,7 +63,11 @@
               <input type="text" placeholder="Expiry Year" class="form-control mt-3 mb-5 rounded-1">
             </div>
           </div>
-          <input type="submit" value="Reserve" class="btn btn-info form-control rounded-1" id="btn_reservation">
+          <div class="button d-flex input-group">
+            <input type="submit" value="Reserve" class="btn btn-info form-control rounded-1 mb-3 mb-sm-0"
+              id="btn_reservation">
+            <input type="submit" value="PayPal" class="btn btn-primary form-control rounded-1 ms-2" id="btn_paypal">
+          </div>
         </div>
       </form>
     </div>
