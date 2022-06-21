@@ -443,7 +443,10 @@ html{
     }
     div{
       #paypal{
+        padding: 4px 85px;
+        color: $color-white;
         background-color: #3A5BA0;
+        border: none;
       }
     }
   }

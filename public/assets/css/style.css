@@ -402,7 +402,10 @@ html {
   color: white;
 }
 #payment form div #paypal {
+  padding: 4px 85px;
+  color: white;
   background-color: #3A5BA0;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -39,16 +39,16 @@
             <div class="radio d-sm-flex">
               <div class="pay-method inputRadio mb-3 text-center text-sm-start mt-5 " id="methpd_payment">
                 <small class="text-start text-sm-start mb-3 d-block">Payment Method ?</small>
-                <input type="radio" name="radio1" id="radio1">
+                <input type="radio" name="payment_method" id="radio1" value="card">
                 <label for="radio1" class="me-2">Card</label>
-                <input type="radio" name="radio1" id="radio2" class="ms-2">
+                <input type="radio" name="payment_method" id="radio2" class="ms-2" value="cash">
                 <label for="radio2">Cash</label>
               </div>
               <div class="inputRadio mb-3 text-center text-sm-end mt-5 ms-sm-5 mb-5" id="methpd_payment">
                 <small class="text-start text-sm-start mb-3 d-block ms-4">Delivery Method ?</small>
-                <input type="radio" name="radio2" id="radio1" class="ms-3">
-                <label for="radio1" class="m">Delivery</label>
-                <input type="radio" name="radio2" id="radio2" class="ms-3">
+                <input type="radio" name="delivery_method" id="radio1" class="ms-3" value="delivery">
+                <label for="radio1" class="">Delivery</label>
+                <input type="radio" name="delivery_method" id="radio2" class="ms-3" value="recover">
                 <label for="radio2">Recover</label>
               </div>
             </div>
@@ -59,7 +59,7 @@
                 <input type="text" placeholder="Card Holder" name="card_holder" class="form-control rounded-1">
               </div>
               <div class="d-md-flex  mb-3 d-block">
-                <input type="text" placeholder="CVC" class="form-control me-3  rounded-1 mb-2 mb-sm-0">
+                <input type="text" placeholder="CVC" class="form-control me-3  rounded-1 mb-2 mb-sm-0" name="cvc">
                 <input type="text" placeholder="Expiry Month" name="expiry_month" class="form-control rounded-1">
               </div>
               <input type="text" placeholder="Expiry Year" name="expiry_year" class="form-control mt-3 mb-5 rounded-1">
@@ -68,9 +68,10 @@
           <div class="button d-block d-sm-flex">
             <input type="submit" value="Reserve" name="submit" class="btn btn-info form-control rounded-1 mb-3 mb-sm-0"
               id="btn_reservation">
-            <a href="https://www.paypal.com/myaccount/summary" target="_blank" class="btn btn-danger">
-              <!-- <input type="submit" value="PayPal" id="paypal" name="paypal"
-                class="btn btn-primary form-control rounded-1 ms-0 ms-sm-3" id="btn_paypal"> -->
+            <a href="https://www.paypal.com/myaccount/summary" target="_blank" name="paypal" id="paypal"
+              class="btn ms-0 ms-sm-3 rounded-1">
+              <!-- <input type="submit" value="PayPal"  
+                class="btn btn-primary form-control rounded-1 " id="btn_paypal"> -->
               Paypal
             </a>
           </div>

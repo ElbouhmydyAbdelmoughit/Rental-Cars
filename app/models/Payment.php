@@ -9,5 +9,6 @@ class Payment
 
   public function create_payment()
   {
+    echo 'validation is works';
   }
 }
