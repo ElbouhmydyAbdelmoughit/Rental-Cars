@@ -40,7 +40,7 @@
                 <small class="text-start text-sm-start mb-3 d-block">Payment Method ?</small>
                 <input type="radio" name="radio1" id="radio1">
                 <label for="radio1" class="me-2">Card</label>
-                <input type="radio" name="radio1" id="radio2" class="ms-2">
+                <input type="radio" onchange="Display();" name="radio1" id="radio2" class="ms-2">
                 <label for="radio2">Cash</label>
               </div>
               <div class="inputRadio mb-3 text-center text-sm-end mt-5 ms-sm-5 mb-5" id="methpd_payment">
