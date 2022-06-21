@@ -439,14 +439,14 @@ html{
     #btn_reservation{
       background-color: $color-primary !important;
       border: none !important;
-      @include shadow();
       color: $color-white;
-      &:hover{
-        background-color: $color-white !important;
-        border: 2px solid $color-primary !important;
-        padding: 4px 98px !important;
-        color: $color-primary !important;
-        box-shadow: none !important;
+    }
+    div{
+      #paypal{
+        padding: 4px 85px;
+        color: $color-white;
+        background-color: #3A5BA0;
+        border: none;
       }
     }
   }

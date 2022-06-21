@@ -399,15 +399,13 @@ html {
 #payment form #btn_reservation {
   background-color: red !important;
   border: none !important;
-  box-shadow: inset 3px 3px 20px red, 3px 3px 20px red;
   color: white;
 }
-#payment form #btn_reservation:hover {
-  background-color: white !important;
-  border: 2px solid red !important;
-  padding: 4px 98px !important;
-  color: red !important;
-  box-shadow: none !important;
+#payment form div #paypal {
+  padding: 4px 85px;
+  color: white;
+  background-color: #3A5BA0;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */

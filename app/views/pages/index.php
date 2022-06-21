@@ -121,7 +121,7 @@ require APPROOT . '/views/inc/header.php';
               <span><?php echo $car->model; ?> </span>
               <h5><?php echo $car->name; ?></h5>
               <p><?php echo $car->price; ?> $/D</p>
-              <a href="<?php echo URLROOT; ?>/Payments/Reserve" class="btn">Rent Now</a>
+              <a href="<?php echo URLROOT; ?>/Payments/Reserve/<?= $car->id ?>" class="btn">Rent Now</a>
             </div>
           </div>
         </div>

@@ -21,16 +21,6 @@ class Pages extends Controller
     $this->view('pages/index', $data);
   }
 
-  // ================== Function payment for car rent ================= //
-
-  public function payment()
-  {
-    $data = [
-      'title' => 'Payment'
-    ];
-
-    $this->view('pages/payment', $data);
-  }
 
   // ================== Function send mail to admin ================= //
   public function contactUs()
