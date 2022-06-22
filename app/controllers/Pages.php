@@ -20,10 +20,4 @@ class Pages extends Controller
 
     $this->view('pages/index', $data);
   }
-
-
-  // ================== Function send mail to admin ================= //
-  public function contactUs()
-  {
-  }
 }
