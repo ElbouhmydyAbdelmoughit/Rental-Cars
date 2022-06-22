@@ -25,6 +25,7 @@ class Payments extends Controller
         'address' => trim($_POST['address']),
         'date' => trim($_POST['date']),
         'payment' => trim($_POST['payment_method']),
+        'delivery' => trim($_POST['delivery_method']),
         'card_number' => trim($_POST['card_number']),
         'card_holder' => trim($_POST['card_holder']),
         'cvc' => trim($_POST['cvc']),
@@ -37,6 +38,7 @@ class Payments extends Controller
         'address_err' => '',
         'date_err' => '',
         'payment_err' => '',
+        'delivery_err' => '',
         'card_number_err' => '',
         'card_holder_err' => '',
         'cvc_err' => '',
@@ -44,8 +46,6 @@ class Payments extends Controller
         'expiry_year_err' => '',
       ];
 
-      var_dump($data);
-      exit;
       //============== Validation ===============//
       // validation CIN
       if (empty($data['cin'])) {
@@ -72,50 +72,76 @@ class Payments extends Controller
         $data['address_err'] = 'Pleae enter Address';
       }
 
-      // Validation Name
+      // Validation Date
       if (empty($data['date'])) {
         $data['date_err'] = 'Pleae enter Date';
       }
+      // Validation Delivery Method
+      if (empty($data['delivery_method'])) {
+        $data['delivery_err'] = 'Pleae enter Delivery Method';
+      }
 
       // Validation Method Payment  Cash or Card 
-      if (!empty($data['payment'])) {
-        if ($data['payment'] == 'card') {
-          // Validation Card Number
-          if (empty($data['card_number'])) {
-            $data['card_number_err'] = 'Pleae enter Card Number';
-          }
+      if (($data['payment']) == 'card') {
 
-          // Validation Card Holder
-          if (empty($data['card_holder'])) {
-            $data['card_holder_err'] = 'Pleae enter Card Holder';
-          }
-
-          // Validation CVC
-          if (empty($data['cvc'])) {
-            $data['cvc_err'] = 'Pleae enter CVC';
-          }
-
-          // Validation Expiry Month
-          if (empty($data['expiry_month'])) {
-            $data['expiry_month_err'] = 'Pleae enter Expiry Month';
-          }
-
-          // Validation Expiry Year
-          if (empty($data['expiry_year'])) {
-            $data['expiry_year_err'] = 'Pleae enter Expiry Year';
-          }
+        // Validation Card Number
+        if (empty($data['card_number'])) {
+          $data['card_number_err'] = 'Pleae enter Card Number';
         }
-      } else {
-        $data['payment_err'] = 'Please Enter Payment Methd';
+
+        // Validation Card Holder
+        if (empty($data['card_holder'])) {
+          $data['card_holder_err'] = 'Pleae enter Card Holder';
+        }
+
+        // Validation CVC
+        if (empty($data['cvc'])) {
+          $data['cvc_err'] = 'Pleae enter CVC';
+        }
+
+        // Validation Expiry Month
+        if (empty($data['expiry_month'])) {
+          $data['expiry_month_err'] = 'Pleae enter Expiry Month';
+        }
+
+        // Validation Expiry Year
+        if (empty($data['expiry_year'])) {
+          $data['expiry_year_err'] = 'Pleae enter Expiry Year';
+        }
+      } else if (empty($data['payment'])) {
+        $data['payment_err'] = 'Please Enter Payment Method';
       }
 
 
-
-      $this->paymentModel->create_payment();
-      $this->view('pages/payment', $data);
+      // Validation variables errors
+      if (empty($data['cin_err']) && empty($data['name_err']) && empty($data['email_err']) && empty($data['phone_err']) && empty($data['address_err']) && empty($data['date_err']) && empty($data['payment_err']) && empty($data['delivery_err']) && empty($data['card_number_err_err']) && empty($data['card_holder_err']) && empty($data['cvc_err']) && empty($data['expiry_month_err']) && empty($data['expiry_year_err'])) {
+        // Validated and affich messages Car Added with function Flash
+        if ($this->paymentModel->create_payment($data)) {
+          flash('payment_message', 'Reservation Successfully');
+          redirect('pages/index');
+        } else {
+          die('Something went wrong');
+        }
+      } else {
+        // Load views with errors
+        $this->view('pages/payment', $data);
+      }
     } else {
       $data = [
         'car' => $car,
+        'cin' => '',
+        'name' => '',
+        'email' => '',
+        'phone' => '',
+        'address' => '',
+        'date' => '',
+        'payment' => '',
+        'delivery' => '',
+        'card_number' => '',
+        'card_holder' => '',
+        'cvc' => '',
+        'expiry_month' => '',
+        'expiry_year' => ''
       ];
 
       $this->view('pages/payment', $data);
