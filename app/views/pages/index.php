@@ -1,7 +1,6 @@
 <?php
-require APPROOT . '/views/inc/header.php';
-
-?>
+require APPROOT . '/views/inc/header.php'; ?>
+<center><?= flash('payment_message') ?></center>
 <!-- ================= section Landing page ===================-->
 <div id="landing_page" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
   <div class="home container-fliud bg-white my-4" id="landingPage">

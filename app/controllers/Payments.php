@@ -46,6 +46,7 @@ class Payments extends Controller
         'expiry_year_err' => '',
       ];
 
+
       //============== Validation ===============//
       // validation CIN
       if (empty($data['cin'])) {
@@ -77,8 +78,13 @@ class Payments extends Controller
         $data['date_err'] = 'Pleae enter Date';
       }
       // Validation Delivery Method
-      if (empty($data['delivery_method'])) {
+      if (empty($data['delivery'])) {
         $data['delivery_err'] = 'Pleae enter Delivery Method';
+      }
+
+      // Validation 
+      if (empty($data['payment'])) {
+        $data['payment_err'] = 'Please Enter Payment Method';
       }
 
       // Validation Method Payment  Cash or Card 
@@ -108,17 +114,14 @@ class Payments extends Controller
         if (empty($data['expiry_year'])) {
           $data['expiry_year_err'] = 'Pleae enter Expiry Year';
         }
-      } else if (empty($data['payment'])) {
-        $data['payment_err'] = 'Please Enter Payment Method';
       }
-
-
       // Validation variables errors
       if (empty($data['cin_err']) && empty($data['name_err']) && empty($data['email_err']) && empty($data['phone_err']) && empty($data['address_err']) && empty($data['date_err']) && empty($data['payment_err']) && empty($data['delivery_err']) && empty($data['card_number_err_err']) && empty($data['card_holder_err']) && empty($data['cvc_err']) && empty($data['expiry_month_err']) && empty($data['expiry_year_err'])) {
+
         // Validated and affich messages Car Added with function Flash
         if ($this->paymentModel->create_payment($data)) {
           flash('payment_message', 'Reservation Successfully');
-          redirect('pages/index');
+          redirect('home');
         } else {
           die('Something went wrong');
         }
