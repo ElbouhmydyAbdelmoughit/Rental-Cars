@@ -18,19 +18,34 @@
         <div class="info_client mt-3 text-center">
           <h3 class="title text-center my-5 fw-bold">Client Info</h3>
           <div class="inputBox mb-3">
-            <input type="text" placeholder="CIN" name="cin" class="form-control">
+            <input type="text" placeholder="CIN" name="cin"
+              class="form-control <?php echo (!empty($data['cin_err'])) ? 'is-invalid' : ''; ?>"
+              value="<?php echo $data['cin']; ?>" />
+            <span class="invalid-feedback"><?php echo $data['cin_err']; ?></span>
           </div>
           <div class="inputBox mb-3">
-            <input type="text" placeholder="Name" name="name" class="form-control">
+            <input type="text" placeholder="Name" name="name"
+              class="form-control <?php echo (!empty($data['name_err'])) ? 'is-invalid' : ''; ?>"
+              value="<?php echo $data['name']; ?>" />
+            <span class="invalid-feedback"><?php echo $data['name_err']; ?></span>
           </div>
           <div class="inputBox mb-3">
-            <input type="email" placeholder="example@example.com" name="email" class="form-control">
+            <input type="email" placeholder="example@example.com" name="email"
+              class="form-control <?php echo (!empty($data['email_err'])) ? 'is-invalid' : ''; ?>"
+              value="<?php echo $data['email']; ?>" />
+            <span class="invalid-feedback"><?php echo $data['email_err']; ?></span>
           </div>
           <div class="inputBox mb-3">
-            <input type="text" placeholder="Phone" name="phone" class="form-control">
+            <input type="text" placeholder="Phone" name="phone"
+              class="form-control <?php echo (!empty($data['phone_err'])) ? 'is-invalid' : ''; ?>"
+              value="<?php echo $data['phone']; ?>" />
+            <span class="invalid-feedback"><?php echo $data['phone_err']; ?></span>
           </div>
           <div class="inputBox mb-3">
-            <input type="text" placeholder="Address" name="address" class="form-control">
+            <input type="text" placeholder="Address" name="address"
+              class="form-control <?php echo (!empty($data['address_err'])) ? 'is-invalid' : ''; ?>"
+              value="<?php echo $data['address']; ?>" />
+            <span class="invalid-feedback"><?php echo $data['address_err']; ?></span>
           </div>
           <div class="flex">
             <div class="inputBox mb-3">
@@ -39,7 +54,7 @@
             <div class="radio d-sm-flex">
               <div class="pay-method inputRadio mb-3 text-center text-sm-start mt-5 " id="methpd_payment">
                 <small class="text-start text-sm-start mb-3 d-block">Payment Method ?</small>
-                <input type="radio" name="payment_method" id="radio1" value="card">
+                <input type="radio" name="payment_method" id="radio1" value="card" checked>
                 <label for="radio1" class="me-2">Card</label>
                 <input type="radio" name="payment_method" id="radio2" class="ms-2" value="cash">
                 <label for="radio2">Cash</label>
@@ -48,26 +63,40 @@
                 <small class="text-start text-sm-start mb-3 d-block ms-4">Delivery Method ?</small>
                 <input type="radio" name="delivery_method" id="radio1" class="ms-3" value="delivery">
                 <label for="radio1" class="">Delivery</label>
-                <input type="radio" name="delivery_method" id="radio2" class="ms-3" value="recover">
+                <input type="radio" name="delivery_method" id="radio2" class="ms-3" value="recover" checked>
                 <label for="radio2">Recover</label>
               </div>
             </div>
             <div class="card_info" id="card_info">
               <div class="d-block d-md-flex mb-3 ">
                 <input type="text" placeholder="Card Number" name="card_number"
-                  class="form-control me-3 rounded-1 mb-2 mb-sm-0">
-                <input type="text" placeholder="Card Holder" name="card_holder" class="form-control rounded-1">
+                  class="form-control me-3 rounded-1 mb-2 mb-sm-0  <?php echo (!empty($data['card_number_err'])) ? 'is-invalid' : ''; ?>  "
+                  value="<?php echo $data['card_number']; ?>">
+                <span class="invalid-feedback"><?php echo $data['card_number_err']; ?></span>
+                <input type="text" placeholder="Card Holder" name="card_holder"
+                  class="form-control rounded-1 <?php echo (!empty($data['card_holder_err'])) ? 'is-invalid' : ''; ?>  "
+                  value="<?php echo $data['card_holder']; ?>">
+                <span class="invalid-feedback"><?php echo $data['card_holder_err']; ?></span>
               </div>
               <div class="d-md-flex  mb-3 d-block">
-                <input type="text" placeholder="CVC" class="form-control me-3  rounded-1 mb-2 mb-sm-0" name="cvc">
-                <input type="text" placeholder="Expiry Month" name="expiry_month" class="form-control rounded-1">
+                <input type="text" placeholder="CVC" name="cvc"
+                  class="form-control me-3  rounded-1 mb-2 mb-sm-0 <?php echo (!empty($data['cvc_err'])) ? 'is-invalid' : ''; ?>  "
+                  value="<?php echo $data['cvc']; ?>">
+                <span class="invalid-feedback"><?php echo $data['cvc_err']; ?></span>
+                <input type=" text" placeholder="Expiry Month" name="expiry_month"
+                  class="form-control rounded-1 <?php echo (!empty($data['expiry_month_err'])) ? 'is-invalid' : ''; ?>  "
+                  value="<?php echo $data['expiry_month']; ?>">
+                <span class="invalid-feedback"><?php echo $data['expiry_month_err']; ?></span>
               </div>
-              <input type="text" placeholder="Expiry Year" name="expiry_year" class="form-control mt-3 mb-5 rounded-1">
+              <input type="text" placeholder="Expiry Year" name="expiry_year"
+                class="form-control mt-3 rounded-1 <?php echo (!empty($data['expiry_year_err'])) ? 'is-invalid' : ''; ?>  "
+                value="<?php echo $data['expiry_year']; ?>">
+              <span class="invalid-feedback"><?php echo $data['expiry_year_err']; ?></span>
             </div>
           </div>
-          <div class="button d-block d-sm-flex">
-            <input type="submit" value="Reserve" name="submit" class="btn btn-info form-control rounded-1 mb-3 mb-sm-0"
-              id="btn_reservation">
+          <div class="button d-block d-sm-flex mt-5">
+            <input type="submit" value="Reserve" name="submit"
+              class="btn btn-info form-control rounded-1 mb-3 mb-sm-0 mt-sm-0" id="btn_reservation">
             <a href="https://www.paypal.com/myaccount/summary" target="_blank" name="paypal" id="paypal"
               class="btn ms-0 ms-sm-3 rounded-1">
               <!-- <input type="submit" value="PayPal"  
