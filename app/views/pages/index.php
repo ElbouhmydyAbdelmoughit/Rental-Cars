@@ -133,16 +133,14 @@ require APPROOT . '/views/inc/header.php'; ?>
 <div class="contact" id="contact" data-aos="fade-up" data-aos-duration="1000">
   <div class="container">
     <section class="mb-4">
-      <div class="my-3">
-        <?php flash('send_message') ?>
-      </div>
       <h2 class="h1-responsive fw-bold text-center my-4">Contact Us</h2>
       <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us
         directly. Our team will come back to you within
         a matter of hours to help you.</p>
+      <center class="my-3"> <?php flash('contact_message') ?></center>
       <div class="row">
         <div class="col-md-9 mb-md-0 mb-5">
-          <form id="contact-form" name="contact-form" action="<?= URLROOT ?>/Pages/contactUs" method="POST">
+          <form id="contact-form" name="contact-form" action="<?= URLROOT ?>/Contacts/contactUs" method="POST">
             <div class="row">
               <div class="col-md-6 my-3">
                 <div class="md-form mb-0">
