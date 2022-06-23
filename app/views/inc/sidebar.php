@@ -1,7 +1,7 @@
 <div class="bg-white" id="sidebar">
   <ul>
     <li class="mb-5">
-      <a href="<?= URLROOT ?>/home" data-bs-toggle="tooltip" data-bs-placement="right" title="Car">
+      <a href="<?= URLROOT ?>/home" data-toggle="tooltip" data-placement="right" title="House">
         <i class="bi bi-house-door-fill"></i>
       </a>
     </li>
