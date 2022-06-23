@@ -10,18 +10,19 @@
         <div>
           <h2 class="mt-2" id="text_login">Login</h2>
         </div>
-        <form action="<?php echo URLROOT; ?>/users/login" method="POST" class="mb-5">
+        <form action="<?php echo URLROOT; ?>/users/login" method="POST" class="mb-5" data-parsley-validate="">
           <!-- Email input -->
           <div class="form-outline mb-4">
             <input type="email" name="email" placeholder="Email"
               class="form-control <?php echo (!empty($data['email_err'])) ? 'is-invalid' : ''; ?>"
-              value="<?php echo $data['email']; ?>" />
+              value="<?php echo $data['email']; ?>" required="" />
             <span class="invalid-feedback"><?php echo $data['email_err']; ?></span>
           </div>
           <!-- Password input -->
           <div class="form-outline mb-4">
             <input type="password" name="password"
-              class="form-control <?php echo (!empty($data['password_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['password']; ?>/>
+              class="form-control <?php echo (!empty($data['password_err'])) ? 'is-invalid' : ''; ?>"
+              value="<?php echo $data['password']; ?>" required="" />
             <span class=" invalid-feedback"><?php echo $data['password_err']; ?></span>
           </div>
           <!-- 2 column grid layout for inline styling -->

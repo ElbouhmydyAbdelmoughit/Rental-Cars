@@ -52,7 +52,7 @@ class Contacts  extends Controller
           die('Something went wrong');
         }
       } else {
-        $this->view('pages/index', $data);
+        redirect('#contact');
       }
     } else {
 
