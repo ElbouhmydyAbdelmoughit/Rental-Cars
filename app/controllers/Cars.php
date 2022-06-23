@@ -3,7 +3,7 @@ class Cars extends Controller
 {
   public function __construct()
   {
-    if (!isLoggedIn()) {
+    if (!isLoggedIn() or $_SESSION['user_role'] != 1) {
       redirect('users/login');
     }
 

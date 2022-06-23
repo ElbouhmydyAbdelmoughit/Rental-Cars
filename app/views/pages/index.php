@@ -45,7 +45,7 @@ require APPROOT . '/views/inc/header.php'; ?>
     <div class="row text-center">
       <div class="contant_card col-12 col-lg-3 col-md-6">
         <div class="card">
-          <img src="https://i.imgur.com/hczKIze.jpg" alt="image team" class=" img-thumbnail">
+          <img src="assets\img\Team10.webp" alt="image team" class=" img-thumbnail">
           <div class="card-body mt-0 pt-0">
             <h3 class="text-wrap">Florian Smith</h3>
             <h5 class="text-wrap">Designer Web</h5>
@@ -87,7 +87,7 @@ require APPROOT . '/views/inc/header.php'; ?>
       </div>
       <div class="contant_card col-12 col-lg-3 col-md-6">
         <div class="card">
-          <img src="assets\img\team5.jpg" alt="image team" class="img-thumbnail">
+          <img src="<?php APPROOT ?> \assets\img\team5.jpg" alt="image team" class="img-thumbnail">
           <div class="card-body mt-0 pt-0">
             <h3 class="text-wrap">John Smith</h3>
             <h5 class="text-wrap">Frant-End</h5>
@@ -144,27 +144,27 @@ require APPROOT . '/views/inc/header.php'; ?>
             <div class="row">
               <div class="col-md-6 my-3">
                 <div class="md-form mb-0">
-                  <input type="text" id="name" name="name" class="form-control" placeholder="Name">
+                  <input type="text" id="name" placeholder="Name" name="name" class="form-control" required>
                 </div>
               </div>
               <div class="col-md-6 my-3">
                 <div class="md-form mb-0">
-                  <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+                  <input type="email" id="email" name="email" placeholder="Email" class="form-control" required>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12 my-3">
                 <div class="md-form mb-0">
-                  <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
+                  <input type="text" id="subject" name="subject" placeholder="Subject" class="form-control" required>
                 </div>
               </div>
             </div>
             <div class="row my-3">
               <div class="col-md-12">
                 <div class="md-form">
-                  <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"
-                    placeholder="Message"></textarea>
+                  <textarea type="text" id="message" name="message" placeholder="Message" rows="2"
+                    class="form-control md-textarea" required></textarea>
                 </div>
               </div>
             </div>

@@ -43,19 +43,25 @@ class Contacts  extends Controller
 
       // Check variables errors
       if (empty($data['name_err']) && empty($data['email_err']) && empty($data['subject_err']) && empty($data['message_err'])) {
+
+
         if ($this->contactModel->createContact($data)) {
           flash('contact_message', 'Contact Send');
           redirect('#contact');
+        } else {
+          die('Something went wrong');
         }
       } else {
-        die('Something went wrong');
+        $this->view('pages/index', $data);
       }
     } else {
+
       $data = [
         'name' => '',
         'email' => '',
         'subject' => '',
         'message' => '',
+        'name_err' => ''
       ];
 
       $this->view('home', $data);

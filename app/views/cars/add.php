@@ -1,9 +1,10 @@
-<div class="contanier">
+<div class="contanier bg-light">
   <div class="row col-12">
     <div class="col-1">
       <?php require APPROOT . '/views/inc/header_sidebar.php'; ?>
     </div>
-    <div class="col-6 mx-auto  rounded-3 bg-light mt-5">
+    <div class="col-6 mx-auto shadow h-50 rounded-3 bg-white mt-5" id="addCar">
+      <h3 class="fw-bold mx-auto text-center mt-3"> Create Car</h3>
       <form action="<?php echo URLROOT; ?>/cars/add" method="post" class="p-5" enctype="multipart/form-data">
         <div class="mb-3">
           <input type="text" name="model" placeholder="Model"
@@ -29,7 +30,7 @@
           <span class="invalid-feedback"><?php echo $data['image_err']; ?></span>
         </div>
         <div class="mb-3">
-          <input type="submit" name="" value="Create" class="btn btn-info">
+          <input type="submit" id="create" value="Create" class="btn form-control">
         </div>
       </form>
     </div>
