@@ -373,6 +373,7 @@ html {
   height: 100vh;
   width: 80px;
   display: flex;
+  margin-right: 20px;
 }
 #sidebar ul {
   margin-top: 30px;
@@ -389,8 +390,50 @@ html {
   color: white !important;
 }
 
+#dashboard {
+  background-color: #c4c4c4 !important;
+}
 #dashboard .row .contant #table table {
-  min-width: 800px !important;
+  width: 800px !important;
+}
+
+#addCar {
+  background-color: black;
+}
+#addCar form input:focus {
+  border: 2px solid black;
+}
+#addCar form input:hover {
+  border-color: black;
+}
+#addCar #create {
+  color: white !important;
+  background-color: red;
+  border: none;
+}
+#addCar #create:hover {
+  border: 2px solid red !important;
+  color: red !important;
+  background-color: white !important;
+  padding: 4px 98px;
+}
+
+#updateCar input:hover {
+  border-color: black;
+}
+#updateCar input:focus {
+  border: 2px solid black;
+}
+#updateCar #update {
+  border: none;
+  color: white;
+  background-color: red;
+}
+#updateCar #update:hover {
+  border: 2px solid red !important;
+  color: red !important;
+  background-color: white !important;
+  padding: 4px 98px;
 }
 
 #payment {
