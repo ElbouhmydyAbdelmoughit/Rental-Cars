@@ -55,7 +55,7 @@
             <div class="radio d-sm-flex">
               <div class="pay-method inputRadio mb-3 text-center text-sm-start mt-5 " id="methpd_payment">
                 <small class="text-start text-sm-start mb-3 d-block">Payment Method ?</small>
-                <input type="radio" name="payment_method" id="radio1" value="card" required="">
+                <input type="radio" name="payment_method" id="radio1" checked value="card" required="">
                 <label for="radio1" class="me-2">Card</label>
                 <input type="radio" name="payment_method" id="radio2" class="ms-2" value="cash" required="">
                 <label for="radio2">Cash</label>
@@ -64,7 +64,7 @@
                 <small class="text-start text-sm-start mb-3 d-block ms-4">Delivery Method ?</small>
                 <input type="radio" name="delivery_method" id="radio1" class="ms-3" value="delivery" required="">
                 <label for="radio1" class="">Delivery</label>
-                <input type="radio" name="delivery_method" id="radio2" class="ms-3" value="recover" required="">
+                <input type="radio" name="delivery_method" id="radio2" class="ms-3" value="recover" checked required="">
                 <label for="radio2">Recover</label>
               </div>
             </div>
