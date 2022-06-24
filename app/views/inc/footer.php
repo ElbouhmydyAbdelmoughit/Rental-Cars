@@ -61,17 +61,12 @@ AOS.init();
 </script>
 <script src="<?= URLROOT ?>/assets/js/bootstrap.bundle.min.js"></script>
 <script src="<?= URLROOT ?>/assets/js/poppoer.min.js"></script>
+<script src="<?= URLROOT ?>/assets/js/script.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
 <script>
 $('#form').parsley();
-</script>
-<script>
-$(function() {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-$('#example').tooltip(options)
 </script>
 </body>
 
