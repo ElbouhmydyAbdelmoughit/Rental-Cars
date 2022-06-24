@@ -55,16 +55,16 @@
             <div class="radio d-sm-flex">
               <div class="pay-method inputRadio mb-3 text-center text-sm-start mt-5 " id="methpd_payment">
                 <small class="text-start text-sm-start mb-3 d-block">Payment Method ?</small>
-                <input type="radio" name="payment_method" id="radio1" value="card" checked>
+                <input type="radio" name="payment_method" id="radio1" value="card" required="">
                 <label for="radio1" class="me-2">Card</label>
-                <input type="radio" name="payment_method" id="radio2" class="ms-2" value="cash">
+                <input type="radio" name="payment_method" id="radio2" class="ms-2" value="cash" required="">
                 <label for="radio2">Cash</label>
               </div>
               <div class="inputRadio mb-3 text-center text-sm-end mt-5 ms-sm-5 mb-5" id="methpd_payment">
                 <small class="text-start text-sm-start mb-3 d-block ms-4">Delivery Method ?</small>
-                <input type="radio" name="delivery_method" id="radio1" class="ms-3" value="delivery">
+                <input type="radio" name="delivery_method" id="radio1" class="ms-3" value="delivery" required="">
                 <label for="radio1" class="">Delivery</label>
-                <input type="radio" name="delivery_method" id="radio2" class="ms-3" value="recover" checked>
+                <input type="radio" name="delivery_method" id="radio2" class="ms-3" value="recover" required="">
                 <label for="radio2">Recover</label>
               </div>
             </div>
@@ -99,11 +99,7 @@
             <input type="submit" value="Reserve" name="submit"
               class="btn btn-info form-control rounded-1 mb-3 mb-sm-0 mt-sm-0" id="btn_reservation">
             <a href="https://www.paypal.com/myaccount/summary" target="_blank" name="paypal" id="paypal"
-              class="btn ms-0 ms-sm-3 rounded-1">
-              <!-- <input type="submit" value="PayPal"  
-                class="btn btn-primary form-control rounded-1 " id="btn_paypal"> -->
-              Paypal
-            </a>
+              class="btn ms-0 ms-sm-3 rounded-1">Paypal</a>
           </div>
         </div>
       </form>

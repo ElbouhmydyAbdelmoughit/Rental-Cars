@@ -14,4 +14,4 @@ container.addEventListener('click', () => {
 })
 
 // Validation Contact Us Page
-var field = $('input').parsley();
+console.log('cwci');
